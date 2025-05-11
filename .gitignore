@@ -50,7 +50,5 @@ dist/
 *.h5
 *.csv
 *.jsonl
-results/
 
 screenshots/
-results/

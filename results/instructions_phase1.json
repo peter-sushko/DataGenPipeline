@@ -1,0 +1,182 @@
+[
+  {
+    "persona": "Russian tech support representative who is generous with explanations.",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Click the \"+ Create\" button to add a new event to your calendar",
+      "Use the search bar to find people and see their calendar availability",
+      "Change the calendar view by selecting the \"Week\" dropdown and choosing a different option like \"Month\" or \"Day\"",
+      "Click on the gear icon to access calendar settings and customize your preferences",
+      "Add another calendar by clicking the \"+\" next to \"Other calendars\" and selecting an option"
+    ],
+    "phase1_augmented_instructions": [
+      "Click the \"+ Create\" button to add a new event to your calendar.",
+      "Use the search bar labeled \"Search for people\" to find people and see their calendar availability.",
+      "Change the calendar view by clicking the \"Week\" dropdown and selecting \"Month\" or \"Day.\"",
+      "Click on the gear icon to access calendar settings and customize your preferences.",
+      "Add another calendar by clicking the \"+\" next to \"Other calendars\" and selecting an option."
+    ]
+  },
+  {
+    "persona": "a proud resident of Vidzeme Region",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Create a new event for May 6th titled \"Team Meeting\" at 10 AM",
+      "Add a reminder for \"Friend's Birthday\" on May 8th",
+      "Check the settings to adjust the time zone to GMT+2 for Vidzeme",
+      "Share the calendar with a colleague",
+      "View the calendar in a month layout instead of the week layout"
+    ],
+    "phase1_augmented_instructions": [
+      "Click \"+ Create\" and set a new event for May 6th titled \"Team Meeting\" at 10 AM.",
+      "Add a reminder for \"Friend's Birthday\" on May 8th.",
+      "Go to settings and change the time zone to GMT+2.",
+      "Use the \"Search for people\" option to share the calendar with a colleague.",
+      "Change the calendar view to a month layout."
+    ]
+  },
+  {
+    "persona": "A risk management director who is cautious and prefers to mitigate potential risks before moving forward with new ideas",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Review the calendar for any overlapping events or scheduling conflicts from May 4th to May 10th and report back",
+      "Set a reminder for May 5th to send an email regarding the Cinco de Mayo event preparations",
+      "Check if there are any shared calendar permissions that need updating for team access",
+      "Update the calendar with any pending meeting requests for the week of May 4th",
+      "Ensure all tasks due in May are added to the 'Tasks' calendar for better tracking"
+    ],
+    "phase1_augmented_instructions": [
+      "Check the calendar from May 4th to May 10th for overlapping events or scheduling conflicts and report back.",
+      "Set a reminder for May 5th to send an email about Cinco de Mayo event preparations.",
+      "Verify and update shared calendar permissions for team access if needed.",
+      "Add any pending meeting requests for the week of May 4th to the calendar.",
+      "Add all tasks due in May to the 'Tasks' calendar for better tracking."
+    ]
+  },
+  {
+    "persona": "A mother of three young boys who knows nothing about football, let alone NFL pools.",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Add a new event for my son's soccer practice on May 6th at 4 PM",
+      "Set a reminder for my birthday on May 15th",
+      "Create a recurring weekly chore reminder for every Saturday at 10 AM",
+      "Share the calendar with my partner to keep them updated",
+      "Add a note to Cinco de Mayo on May 5th to remind me to buy decorations"
+    ],
+    "phase1_augmented_instructions": [
+      "Add an event on May 6th at 4 PM for son's soccer practice.",
+      "Set a reminder for May 15th for your birthday.",
+      "Create a recurring reminder every Saturday at 10 AM for chores.",
+      "Share the calendar with your partner.",
+      "Add a note on May 5th for Cinco de Mayo to remind you to buy decorations."
+    ]
+  },
+  {
+    "persona": "A multi-generational farmer who can trace their family's roots in the area back several centuries",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Add a new event on May 6, 2025, for a family farm meeting at 10 AM",
+      "Set a reminder for the Cinco de Mayo event on May 5,",
+      "Check if there are any shared calendars that need to be added or updated",
+      "Switch the calendar view to the month format for a better overview of May",
+      "Add a recurring task for weekly equipment maintenance every Monday at 8 AM"
+    ],
+    "phase1_augmented_instructions": [
+      "Create a new event on May 6, 2025, for a family farm meeting at 10 AM.",
+      "Set a reminder for the Cinco de Mayo event on May 5.",
+      "Check for any shared calendars that need to be added or updated.",
+      "Change the calendar view to month format for May.",
+      "Add a recurring task for weekly equipment maintenance every Monday at 8 AM."
+    ]
+  },
+  {
+    "persona": "a history teacher who has lived in Yukon for many years",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Add a recurring event every Monday for the history class from 10 AM to 11 AM",
+      "Schedule a reminder for May 14th to prepare materials for the Yukon history lecture",
+      "Share the calendar with a new assistant to help manage upcoming events",
+      "Create a task to research new historical resources for the upcoming semester",
+      "Set a notification for May 5th to remind me of the Cinco de Mayo cultural discussion"
+    ],
+    "phase1_augmented_instructions": [
+      "Add a recurring event every Monday titled \"History Class\" from 10 AM to 11 AM.",
+      "Schedule a reminder on May 14th to prepare materials for the Yukon history lecture.",
+      "Share the calendar with an assistant to help manage upcoming events.",
+      "Create a task to research new historical resources for the upcoming semester.",
+      "Set a notification on May 5th to remind about the Cinco de Mayo cultural discussion."
+    ]
+  },
+  {
+    "persona": "A technology consultant who tries to convince others of the benefits of streaming services",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Schedule a meeting on May 10, 2025, at 3 PM to discuss streaming service benefits",
+      "Add a recurring reminder every Friday at 10 AM to review streaming service options",
+      "Share the calendar with a colleague to coordinate on upcoming tech presentations",
+      "Create an event on May 5, 2025, to attend a webinar about the latest streaming technologies",
+      "Set a notification for May 7, 2025, at 9 AM to prepare a presentation on streaming services"
+    ],
+    "phase1_augmented_instructions": [
+      "Schedule a meeting on May 10, 2025, at 3 PM to discuss streaming service benefits.",
+      "Add a recurring reminder every Friday at 10 AM to review streaming service options.",
+      "Share the calendar with a colleague to coordinate on upcoming tech presentations.",
+      "Create an event on May 5, 2025, to attend a webinar about the latest streaming technologies.",
+      "Set a notification for May 7, 2025, at 9 AM to prepare a presentation on streaming services."
+    ]
+  },
+  {
+    "persona": "A local government official seeking to rejuvenate old neighborhoods without causing gentrification",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Schedule a weekly community meeting every Tuesday at 6 PM to discuss neighborhood rejuvenation ideas",
+      "Set a reminder on the first Monday of each month to review progress and adjust plans as needed",
+      "Add an event for a local workshop on sustainable building practices on Saturday, May 17, at 10 AM",
+      "Block out time every Wednesday from 2 PM to 4 PM for site visits to monitor ongoing projects",
+      "Create a calendar entry for a public forum on housing affordability on Friday, May 23, at 7 PM"
+    ],
+    "phase1_augmented_instructions": [
+      "Schedule a weekly meeting every Tuesday at 6 PM titled \"Community Meeting: Neighborhood Rejuvenation Ideas.\"",
+      "Set a monthly reminder on the first Monday to review progress and adjust plans.",
+      "Add an event titled \"Local Workshop on Sustainable Building Practices\" on Saturday, May 17, at 10 AM.",
+      "Block time every Wednesday from 2 PM to 4 PM for \"Site Visits: Ongoing Projects Monitoring.\"",
+      "Create a calendar entry for \"Public Forum on Housing Affordability\" on Friday, May 23, at 7 PM."
+    ]
+  },
+  {
+    "persona": "An American actor working in Bollywood who has an obsession with quirky character stereotypes and a fondness for breaking them.",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Add a calendar event for a Bollywood script reading on May 6th at 10 AM",
+      "Set a reminder for Samuel Samsudin’s birthday on May 15th with a quirky Bollywood theme",
+      "Create a recurring weekly task for rehearsals every Wednesday at 3 PM",
+      "Share the calendar with the production team and ensure they have edit permissions",
+      "Add a note to explore unique character stereotype ideas on May 8th at 2 PM"
+    ],
+    "phase1_augmented_instructions": [
+      "Create a calendar event titled \"Bollywood Script Reading\" on May 6th at 10 AM.",
+      "Set a reminder for Samuel Samsudin’s birthday on May 15th with a note for a quirky Bollywood theme.",
+      "Add a recurring weekly task for \"Rehearsals\" every Wednesday at 3 PM.",
+      "Share the calendar with the production team and grant them edit permissions.",
+      "Add a note titled \"Explore Unique Character Stereotype Ideas\" on May 8th at 2 PM."
+    ]
+  },
+  {
+    "persona": "A NASA scientist studying the potential for extraterrestrial life in harsh environments",
+    "url": "https://calendar.google.com/",
+    "phase1_instructions": [
+      "Add a recurring weekly meeting for the research team every Tuesday at 10 AM",
+      "Schedule a one-time event on May 15, 2025, for a presentation on the latest findings",
+      "Set a reminder on May 9, 2025, for reviewing the data collected from the latest Mars simulation",
+      "Add a new calendar labeled \"Extraterrestrial Life Research\" and share it with the team",
+      "Check the availability of key team members for a potential conference call on May 8,"
+    ],
+    "phase1_augmented_instructions": [
+      "Create a recurring weekly event titled \"Research Team Meeting\" every Tuesday at 10 AM.",
+      "Add a one-time event on May 15, 2025, titled \"Presentation on Latest Findings.\"",
+      "Set a reminder for May 9, 2025, to review the data collected from the latest Mars simulation.",
+      "Create a new calendar labeled \"Extraterrestrial Life Research\" and share it with the team.",
+      "Check availability of key team members for a potential conference call on May 8, 2025."
+    ]
+  }
+]
