@@ -31,8 +31,16 @@ def generate_instructions(
         prompt = (
             f"Imagine you are a {persona} using this website. "
             f"Based on your persona and the image of the current state of the page, generate a list of {num_instructions} distinct instructions that you might give to an assistant for tasks in this website. "
-            f"These instructions must be feasible given the current page state, not involve modifying/deleting content that is not currently present, realistic using natural human phrasing, and vary in complexity."
-            f"return just the list of instructions, no other, no need for quotations, in english."
+            f"These instructions must be feasible given the current page state and does not involve modifying/deleting content that is not currently present. "
+            f"Vary the complexity of the instructions. "
+            f"Also use underepresented places, topics, and entities, in the instructions whenever possible. "
+            f"For example, avoid defaulting to overused places like 'Seattle', 'Seattle Children's Hospital', or 'Fremont Troll'. "
+            f"Instead, choose more persona-related, or lesser-known entities that make sense within the context of the page. "
+            f"Return just the list of instructions, no other, no need for quotations, in english."
+            f"Example, (but do not include these in your output): "
+            f"- Show me the the fastest bus route to the nearest starbucks (google maps)"
+            f"- Create a calendar event for a meeting with John on May 12th, 10AM (google calendar)"
+            f"- Book me the cheapest flight from Seattle to San Francisco on May 30th at 10AM (google flights)"
         )
     else:
         prompt = (

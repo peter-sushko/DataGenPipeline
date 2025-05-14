@@ -10,16 +10,16 @@ from generate_trajectory import chat_ai_playwright_code
 
 # ========== CONFIGURABLE PARAMETERS ==========
 PHASE = 1
-START_IDX = 4
-END_IDX = 5
+START_IDX = 0
+END_IDX = 2
 MAX_RETRIES = 9
-
+ACTION_TIMEOUT = 30000  # 30 seconds timeout for actions
 # Execution Modes:
 # 0 - Automatic Mode: Processes all instructions without manual intervention
 # 1 - Interactive Mode: Requires Enter press after each instruction for manual review
 MODE = 0
 
-from config import  RESULTS_DIR
+from config import RESULTS_DIR
 
 def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_idx):
     # Load the appropriate phase file
@@ -39,15 +39,22 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
     all_instructions = []
     for persona_data in data:
         persona = persona_data['persona']
-        instructions = persona_data[f'phase{phase}_augmented_instructions']
-        original_instructions = persona_data[f'phase{phase}_instructions']
+        url = persona_data['url']  # Get URL from persona data
+        instructions = persona_data['augmented_instructions']
+        original_instructions = persona_data['instructions']
         
         for orig_instr, aug_instr in zip(original_instructions, instructions):
             all_instructions.append({
                 'persona': persona,
+                'url': url,  # Include URL in instruction data
                 'original_instruction': orig_instr,
                 'augmented_instruction': aug_instr
             })
+
+    # Check if the specified range is empty
+    if start_idx >= len(all_instructions) or end_idx <= start_idx or end_idx > len(all_instructions):
+        print(f"❌ Error: Invalid instruction range. Total instructions: {len(all_instructions)}, Requested range: {start_idx} to {end_idx}")
+        return
 
     # Start browser once for all instructions
     with sync_playwright() as p:
@@ -62,6 +69,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
             # Process only the specified range of instructions
             for idx, instruction_data in enumerate(all_instructions[start_idx:end_idx], start=start_idx):
                 persona = instruction_data['persona']
+                url = instruction_data['url']  # Get URL for this instruction
                 original_instruction = instruction_data['original_instruction']
                 augmented_instruction = instruction_data['augmented_instruction']
                 
@@ -69,23 +77,26 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                 run_uuid = str(uuid.uuid4())
                 instruction_dir = os.path.join(RESULTS_DIR, run_uuid)
                 os.makedirs(instruction_dir, exist_ok=True)
-                
+                print(f"////////////////////////////////////////////////////////////")
                 print(f"\n🔄 Processing instruction {idx + 1}")
                 print(f"👤 Persona: {persona}")
+                print(f"🌐 Starting URL: {url}")
                 print(f"📝 Original Instruction: {original_instruction}")
                 print(f"🔄 Augmented Instruction: {augmented_instruction}")
                 print(f"Run UUID: {run_uuid} | Files will be saved in: {instruction_dir}")
-                
+                print(f"////////////////////////////////////////////////////////////")
                 # Create a new page for each instruction
                 page = browser.new_page()
-                page.goto("https://www.google.com/calendar/")
-                task_summarizer = []  # This will now store dictionaries instead of just code
+                page.set_default_timeout(ACTION_TIMEOUT)  # Set default timeout for all actions
+                page.goto(url)  # Use URL from instruction data
+                execution_history = []  # For passing to chat_ai_playwright_code
+                task_summarizer = []  # For documentation
                 max_retries = MAX_RETRIES
                 
                 try:
+                    # Wait for login to complete
                     page.wait_for_selector('[aria-label*="Google Account"]', timeout=300000)
                     print("✅ Logged in successfully!")
-
                     while True:
                         # Take screenshot with UUID-based path
                         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -101,15 +112,15 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                             print("\n🔍 Deletion task detected in instruction:", augmented_instruction)
 
                         # Get Playwright code from GPT
-                        playwright_code = chat_ai_playwright_code(
+                        gpt_response = chat_ai_playwright_code(
                             accessibility_tree=tree,
-                            previous_steps=task_summarizer,
+                            previous_steps=execution_history,  # Use execution_history instead
                             taskGoal=augmented_instruction,
                             image_path=screenshot_path,
                             is_deletion_task=is_deletion_task
                         )
 
-                        if playwright_code is None:
+                        if "summary_instruction" in gpt_response:
                             print("Task completed!")
                             # Save task summarizer in UUID directory
                             summary_path = os.path.join(instruction_dir, f"task_summarizer.txt")
@@ -117,31 +128,40 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                 f.write(f"Persona: {persona}\n")
                                 f.write(f"Original Instruction: {original_instruction}\n")
                                 f.write(f"Augmented Instruction: {augmented_instruction}\n")
+                                f.write(f"Final Instruction: {gpt_response['summary_instruction']}\n")
                                 f.write("\nTask Steps:\n")
                                 for step in task_summarizer:
-                                    f.write("\n=== Step ===\n")
+                                    f.write(f"Step: {step['step']}\n")
                                     f.write(f"Playwright Code: {step['code']}\n")
                                     f.write(f"Accessibility Tree: {pprint.pformat(step['axtree'], indent=2, width=120)}\n")
                             print(f"Task summarizer saved to {summary_path}")
                             break
 
                         # Rest of the execution code...
-                        print(f"🤖 Executing Playwright code: {playwright_code}")
+                        description = gpt_response["description"]
+                        code = gpt_response["code"]
+                        print(f"🤖 Executing Description: {description}")
+                        print(f"🤖 Executing Playwright code: {code}")
                         
                         retry_count = 0
                         last_failed_code = None
                         while retry_count < max_retries:
                             try:
-                                exec(playwright_code)
-                                # Store both code and accessibility tree
+                                exec(code)
+                                # Store in both arrays
+                                execution_history.append({
+                                    'step': description,
+                                    'code': code
+                                })
                                 task_summarizer.append({
-                                    'code': playwright_code,
+                                    'step': description,
+                                    'code': code,
                                     'axtree': tree
                                 })
                                 break
                             except Exception as e:
                                 retry_count += 1
-                                last_failed_code = playwright_code
+                                last_failed_code = code
                                 
                                 if retry_count < max_retries:
                                     print(f"⚠️ Attempt {retry_count} failed: {str(e)}")
@@ -152,25 +172,32 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                     page.screenshot(path=screenshot_path)
                                     tree = page.accessibility.snapshot()
 
-                                    playwright_code = chat_ai_playwright_code(
+                                    gpt_response = chat_ai_playwright_code(
                                         accessibility_tree=tree,
-                                        previous_steps=task_summarizer,
+                                        previous_steps=execution_history,  # Use execution_history
                                         taskGoal=augmented_instruction,
                                         image_path=screenshot_path,
                                         last_failed_code=last_failed_code,
                                         is_deletion_task=is_deletion_task
                                     )
                                     
-                                    if playwright_code is None:
+                                    if gpt_response is None:
                                         print("Task completed!")
                                         break
-                                        
-                                    print(f"🤖 New attempt with code: {playwright_code}")
+                                    new_description = gpt_response["description"]
+                                    new_code = gpt_response["code"]
+                                    print(f"🤖 New Attempt Description: {new_description}")
+                                    print(f"🤖 New attempt with code: {new_code}")    
                                     try:
-                                        exec(playwright_code)
-                                        # Store both code and accessibility tree for retry
+                                        exec(new_code)
+                                        # Store in both arrays
+                                        execution_history.append({
+                                            'step': new_description,
+                                            'code': new_code
+                                        })
                                         task_summarizer.append({
-                                            'code': playwright_code,
+                                            'step': new_description,
+                                            'code': new_code,
                                             'axtree': tree
                                         })
                                         break
@@ -214,6 +241,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
             # Always prompt before closing browser
             input("🔚 Press Enter to close browser...")
             browser.close()
+
 
 def main():
     chrome_profile_path = os.getenv("CHROME_PROFILE_PATH")

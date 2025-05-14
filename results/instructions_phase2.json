@@ -1,20 +1,2 @@
 [
-  {
-    "persona": "A safety inspector responsible for ensuring compliance with nuclear safety standards",
-    "url": "https://calendar.google.com/",
-    "instructions": [
-      "Remove the \"New Calendar Name\" from the list of calendars",
-      "Add a new event on May 12th titled \"Safety Inspection Meeting\" from 9 AM to 11 AM",
-      "Change the color of the \"Tasks\" calendar for better visibility",
-      "Delete the \"Birthdays\" calendar from the list",
-      "Update the time zone to reflect the correct local time for our inspections"
-    ],
-    "augmented_instructions": [
-      "Remove the calendar named \"New Calendar Name\" from the list.",
-      "Add an event titled \"Safety Inspection Meeting\" on May 12th from 9 AM to 11 AM.",
-      "Change the color of the \"Tasks\" calendar for better visibility.",
-      "Delete the \"Birthdays\" calendar from the list.",
-      "Update the time zone to reflect the correct local time for inspections."
-    ]
-  }
 ]

@@ -24,7 +24,7 @@ chrome_profile_path = os.getenv("CHROME_PROFILE_PATH")
 chrome_executable_path = os.getenv("CHROME_EXECUTABLE_PATH")
 PERSONAHUB_DATA_PATH = "persona.jsonl"  # Path to PersonaHub data file
 SCREENSHOT_PATH = "screenshot.png"
-PHASE = 2
+PHASE = 1
 
 def write_documentation(persona, url, instructions, augmented_instructions, results_dir=RESULTS_DIR, filename=f"instructions_phase{PHASE}.json"):
     import json

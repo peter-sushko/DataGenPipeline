@@ -46,55 +46,31 @@ def resize_image_url(url: str, max_width=512) -> str:
     img.save(buffer, format="PNG", optimize=True)
     return base64.b64encode(buffer.getvalue()).decode("utf-8")
 
+
 def clean_code_response(raw_content):
-    """Clean the raw response to extract just the Python code."""
-    if not raw_content:
+    """Clean the raw response and return the parsed JSON object."""
+    raw_content = raw_content.strip()
+    
+    # Handle null response
+    if raw_content == "null":
         return None
         
-    raw_content = raw_content.strip()
-    
-    # Remove code block markers
-    code_block_markers = [
-        "```python",
-        "```",
-        "⁠ python",
-        "⁠  python",
-        "python",
-        "⁠  ",
-        "⁠ "
-    ]
-    
-    for marker in code_block_markers:
-        if raw_content.startswith(marker):
-            raw_content = raw_content[len(marker):].strip()
-            break
-    
-    # Remove ending markers
+    # Remove markdown code block if present
+    if raw_content.startswith("```json"):
+        raw_content = raw_content[len("```json"):].strip()
+    elif raw_content.startswith("```"):
+        raw_content = raw_content[len("```"):].strip()
     if raw_content.endswith("```"):
         raw_content = raw_content[:-3].strip()
-    if raw_content.endswith("⁠  "):
-        raw_content = raw_content[:-3].strip()
-    
-    # Remove any remaining whitespace
-    raw_content = raw_content.strip()
-    
-    # Remove any remaining backticks
-    raw_content = raw_content.replace("`", "")
-    
-    # Debug print
-    print("Cleaned code:", raw_content)
-    
-    return raw_content
+        
+    try:
+        # Parse and return the entire JSON response
+        return json.loads(raw_content)
+    except json.JSONDecodeError:
+        print("Error: Response was not valid JSON")
+        return None
 
-def clean_json_response(raw_content):
-    raw_content = raw_content.strip()
-    if raw_content.startswith("  ⁠json"):
-        raw_content = raw_content[len("⁠  json"):].strip()
-    if raw_content.endswith("  ⁠"):
-        raw_content = raw_content[:-3].strip()
-    return raw_content
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+client = OpenAI(api_key=api_key)
 
 @dataclass
 class TaskStep:
@@ -103,57 +79,6 @@ class TaskStep:
     value: str = None
 
 task_summarizer = []
-
-def is_calendar_event(node):
-    """
-    Detect calendar events and tasks based on known structure:
-    - role is 'button'
-    - name contains 'calendar:' and time info like 'am', 'pm', or 'all day'
-    """
-    name = node.get("name", "").lower()
-    return (
-        node.get("role") == "button" and
-        "calendar:" in name and
-        ("am" in name or "pm" in name or "all day" in name)
-    )
-
-def prune_ax_tree(node):
-    """
-    Recursively prune the accessibility tree to:
-    - Keep only relevant roles and properties
-    - Remove event/task buttons from calendar gridcells
-    """
-
-    # Roles we care about
-    actionable_roles = {
-        "button", "link", "textbox", "checkbox", "radio",
-        "combobox", "tab", "switch", "menuitem", "listitem", "option"
-    }
-
-    # Properties to keep
-    keep_attrs = {"role", "name", "checked", "pressed", "expanded", "haspopup", "children"}
-
-    # Base case: no children
-    if "children" not in node:
-        return {k: v for k, v in node.items() if k in keep_attrs} if node.get("role") in actionable_roles else None
-
-    # Recursively prune children
-    pruned_children = []
-    for child in node["children"]:
-        if is_calendar_event(child):
-            continue  # ❌ Remove scheduled calendar events/tasks
-        pruned = prune_ax_tree(child)
-        if pruned:
-            pruned_children.append(pruned)
-
-    # Keep this node if it's actionable or has valid children
-    if node.get("role") in actionable_roles or pruned_children:
-        pruned_node = {k: v for k, v in node.items() if k in keep_attrs and k != "children"}
-        if pruned_children:
-            pruned_node["children"] = pruned_children
-        return pruned_node
-    return None
-
 
 def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, last_failed_code=None, is_deletion_task=False):
     """Get Playwright code directly from GPT to execute the next step."""
@@ -172,10 +97,6 @@ def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGo
         base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG
         print("\n🤖 Using STANDARD task prompt")
 
-    # # Append failed code note
-    # if last_failed_code:
-    #     base_system_message += f"\n\n Last attempt failed with this code:\n{last_failed_code}\nPlease provide a different solution and do NOT use this same code again."
-
     if accessibility_tree is not None and previous_steps is not None and image_path:
         try:
             # Resize and encode image
@@ -189,11 +110,6 @@ def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGo
                 img.save(buffer, format="PNG", optimize=True)
                 resized_image = base64.b64encode(buffer.getvalue()).decode("utf-8")
 
-            # Add last failed attempt information to the prompt if available
-            # failed_attempt_info = ""
-            # if last_failed_code:
-            #     failed_attempt_info = f"\n\nLast attempt failed with this code: {last_failed_code}\nPlease provide a different solution that DOESN'T USE THIS FAILED code."
-            # print(base_system_message + failed_attempt_info)
             response = client.chat.completions.create(
                 model="gpt-4o",
                 messages=[
@@ -219,14 +135,14 @@ def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGo
                 ]
             )
             log_token_usage(response)
-            raw_content = clean_code_response(response.choices[0].message.content)
-            print("Raw Playwright code:", raw_content)
+            gpt_response = clean_code_response(response.choices[0].message.content)
+            print("GPT Response:", gpt_response)
             
-            if raw_content.strip() == "null":
-                print("✅ Task goal appears to be complete. No further action needed.")
+            if gpt_response is None:
+                print("✅ Task completed!")
                 return None
                 
-            return raw_content.strip()
+            return gpt_response
             
         except Exception as e:
             print(f"❌ Error in GPT call: {str(e)}")
