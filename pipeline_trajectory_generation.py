@@ -123,17 +123,26 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                         if "summary_instruction" in gpt_response:
                             print("Task completed!")
                             # Save task summarizer in UUID directory
-                            summary_path = os.path.join(instruction_dir, f"task_summarizer.txt")
+                            summary_path = os.path.join(instruction_dir, f"task_summarizer.json")
+                            
+                            # Create a structured JSON object
+                            summary_data = {
+                                "persona": persona,
+                                "original_instruction": original_instruction,
+                                "augmented_instruction": augmented_instruction,
+                                "final_instruction": gpt_response['summary_instruction'],
+                                "task_steps": [
+                                    {
+                                        "step": step['step'],
+                                        "code": step['code'],
+                                        "accessibility_tree": step['axtree']
+                                    } for step in task_summarizer
+                                ]
+                            }
+                            
+                            # Write JSON file with proper formatting
                             with open(summary_path, "w", encoding="utf-8") as f:
-                                f.write(f"Persona: {persona}\n")
-                                f.write(f"Original Instruction: {original_instruction}\n")
-                                f.write(f"Augmented Instruction: {augmented_instruction}\n")
-                                f.write(f"Final Instruction: {gpt_response['summary_instruction']}\n")
-                                f.write("\nTask Steps:\n")
-                                for step in task_summarizer:
-                                    f.write(f"Step: {step['step']}\n")
-                                    f.write(f"Playwright Code: {step['code']}\n")
-                                    f.write(f"Accessibility Tree: {pprint.pformat(step['axtree'], indent=2, width=120)}\n")
+                                json.dump(summary_data, f, indent=2, ensure_ascii=False)
                             print(f"Task summarizer saved to {summary_path}")
                             break
 
@@ -144,7 +153,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                         print(f"🤖 Executing Playwright code: {code}")
                         
                         retry_count = 0
-                        last_failed_code = None
+                        failed_codes = []
                         while retry_count < max_retries:
                             try:
                                 exec(code)
@@ -161,7 +170,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                 break
                             except Exception as e:
                                 retry_count += 1
-                                last_failed_code = code
+                                failed_codes.append(code)
                                 
                                 if retry_count < max_retries:
                                     print(f"⚠️ Attempt {retry_count} failed: {str(e)}")
@@ -177,7 +186,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                         previous_steps=execution_history,  # Use execution_history
                                         taskGoal=augmented_instruction,
                                         image_path=screenshot_path,
-                                        last_failed_code=last_failed_code,
+                                        failed_codes=failed_codes,
                                         is_deletion_task=is_deletion_task
                                     )
                                     
