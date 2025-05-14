@@ -80,10 +80,19 @@ class TaskStep:
 
 task_summarizer = []
 
-def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, last_failed_code=None, is_deletion_task=False):
-    """Get Playwright code directly from GPT to execute the next step."""
+def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, failed_codes=None, is_deletion_task=False):
+    """Get Playwright code directly from GPT to execute the next step.
+    
+    Args:
+        accessibility_tree: The accessibility tree of the current page
+        previous_steps: List of previous steps taken
+        taskGoal: The goal of the current task
+        image_path: Path to the screenshot of the current page
+        failed_codes: List of previously failed code attempts
+        is_deletion_task: Whether this is a deletion task
+    """
     # Base system message
-    if last_failed_code:
+    if failed_codes and len(failed_codes) > 0:
         if is_deletion_task:
             base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED + "\n\n" + PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION
             print("\n🤖 Using FAILED DELETION task prompt")

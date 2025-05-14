@@ -1,0 +1,1024 @@
+{
+  "persona": "A project manager who relies on accurate budget information to make strategic decisions",
+  "original_instruction": "Create a project proposal document using the Tropic template for the new community center project in Windhoek, Namibia",
+  "augmented_instruction": "Open the Tropic template and create a project proposal document for the new community center project in Windhoek, Namibia.",
+  "url": "https://docs.google.com",
+  "final_instruction": "Create a new project proposal document titled 'Community Center Project Proposal - Windhoek, Namibia' using the Tropic template in Google Docs.",
+  "task_steps": [
+    {
+      "step": "Click on the 'Project proposal Tropic' option to open the Tropic template.",
+      "code": "page.get_by_role('option', name='Project proposal Tropic').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Google Docs",
+        "children": [
+          {
+            "role": "button",
+            "name": "Main menu"
+          },
+          {
+            "role": "link",
+            "name": "Docs"
+          },
+          {
+            "role": "combobox",
+            "name": "Search bar",
+            "autocomplete": "list",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "Search"
+          },
+          {
+            "role": "button",
+            "name": "Google apps"
+          },
+          {
+            "role": "button",
+            "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+          },
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "text",
+                "name": "Recently used templates"
+              },
+              {
+                "role": "listbox",
+                "name": "Recently used templates",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "option",
+                    "name": "Blank document"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Resume Serif"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Resume Coral"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Letter Spearmint"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Project proposal Tropic"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Brochure Geometric"
+                  }
+                ]
+              },
+              {
+                "role": "heading",
+                "name": "Start a new document",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Template gallery"
+              },
+              {
+                "role": "button",
+                "name": "More actions.",
+                "haspopup": "menu"
+              }
+            ]
+          },
+          {
+            "role": "heading",
+            "name": "Recent documents",
+            "level": 2
+          },
+          {
+            "role": "button",
+            "name": "Owner Filter Options",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "List view"
+          },
+          {
+            "role": "button",
+            "name": "Sort options",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "Open file picker"
+          },
+          {
+            "role": "text",
+            "name": "Recent documents"
+          },
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "generic",
+                "name": "No text documents yet Select a blank document or choose another template above to get started",
+                "focused": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click on the 'File' menu to start creating a new project proposal document.",
+      "code": "page.get_by_role('menuitem', name='File').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Project proposal - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Project proposal"
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": "  Share",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help"
+                  }
+                ]
+              },
+              {
+                "role": "textbox",
+                "name": ""
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": " ",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": " ",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": " ",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": " ",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              },
+              {
+                "role": "text",
+                "name": " "
+              },
+              {
+                "role": "button",
+                "name": "",
+                "disabled": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click on 'Make a copy' to create a new document based on the Tropic template.",
+      "code": "page.get_by_role('menuitem', name='Make a copy c').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Project proposal - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Project proposal"
+              },
+              {
+                "role": "textbox",
+                "name": "Rename",
+                "value": "Project proposal"
+              },
+              {
+                "role": "checkbox",
+                "name": "Star",
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Move"
+              },
+              {
+                "role": "button",
+                "name": "Document status: Saved to Drive."
+              },
+              {
+                "role": "button",
+                "name": "Last edit was seconds ago"
+              },
+              {
+                "role": "button",
+                "name": "Show all comments 0 new comments",
+                "pressed": false
+              },
+              {
+                "role": "button",
+                "name": "Join a call here or present this tab to the call",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Share. Private to only me. "
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Try Gemini"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "focused": true,
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File",
+                    "expanded": true,
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help",
+                    "haspopup": "menu"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Search the menus (Option+/)",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "combobox",
+                    "name": "Menus",
+                    "autocomplete": "list",
+                    "haspopup": "listbox"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Main",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "button",
+                    "name": "Undo (⌘Z)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Redo (⌘Y)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Print (⌘P)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Spelling and grammar check (⌘+Option+X)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Paint format",
+                    "pressed": false
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Zoom",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Zoom",
+                        "autocomplete": "both",
+                        "value": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Styles",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Font",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Decrease font size (⌘+Shift+comma)"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Font size",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Font size",
+                        "autocomplete": "both",
+                        "value": "12"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Increase font size (⌘+Shift+period)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Bold (⌘B)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Italic (⌘I)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Underline (⌘U)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Text color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Highlight color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert link (⌘K)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Add comment (⌘+Option+M)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert image",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "More",
+                    "disabled": true,
+                    "pressed": false
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Mode and view",
+                "orientation": "horizontal"
+              },
+              {
+                "role": "button",
+                "name": "Show side panel",
+                "pressed": true
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": "Document tabs",
+            "children": [
+              {
+                "role": "button",
+                "name": "Hide tabs & outlines"
+              },
+              {
+                "role": "heading",
+                "name": "Document tabs",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Add tab"
+              },
+              {
+                "role": "tree",
+                "name": "Document tabs",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "treeitem",
+                    "name": "Tab 1",
+                    "selected": true,
+                    "level": 1,
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Tab options",
+                        "haspopup": "menu"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "menuitem",
+                        "name": "Project Name level 1"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Overview level 1"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Goals level 1"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Specifications level 1"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Lorem Ipsum level 2"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Milestones level 1"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Lorem ipsum level 2"
+                      },
+                      {
+                        "role": "menuitem",
+                        "name": "Dolor sit amet level 2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "menu",
+            "name": "",
+            "haspopup": "menu",
+            "orientation": "vertical",
+            "children": [
+              {
+                "role": "menuitem",
+                "name": "New n ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Open o ⌘O"
+              },
+              {
+                "role": "menuitem",
+                "name": "Make a copy c"
+              },
+              {
+                "role": "menuitem",
+                "name": "Share s ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Email e ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Download d ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Rename r"
+              },
+              {
+                "role": "menuitem",
+                "name": "Move m"
+              },
+              {
+                "role": "menuitem",
+                "name": "Add shortcut to Drive ,"
+              },
+              {
+                "role": "menuitem",
+                "name": "Move to trash t"
+              },
+              {
+                "role": "menuitem",
+                "name": "Version history h ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Make available offline k"
+              },
+              {
+                "role": "menuitem",
+                "name": "Details b"
+              },
+              {
+                "role": "menuitem",
+                "name": "Security limitations y"
+              },
+              {
+                "role": "menuitem",
+                "name": "Language l ►",
+                "haspopup": "menu"
+              },
+              {
+                "role": "menuitem",
+                "name": "Page setup g"
+              },
+              {
+                "role": "menuitem",
+                "name": "Print p ⌘P"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "name": "Turn on screen reader support"
+          },
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          },
+          {
+            "role": "dialog",
+            "name": "Organize your document with tabs",
+            "description": "Organize your document with tabs Name tabs, add emojis, and create sub-tabs to add structure and make your document easier to read Got it",
+            "children": [
+              {
+                "role": "heading",
+                "name": "Organize your document with tabs",
+                "level": 1
+              },
+              {
+                "role": "text",
+                "name": "Name tabs, add emojis, and create sub-tabs to add structure and make your document easier to read"
+              },
+              {
+                "role": "button",
+                "name": "Got it"
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          }
+        ]
+      }
+    },
+    {
+      "step": "Change the name of the new document to 'Community Center Project Proposal - Windhoek, Namibia'.",
+      "code": "page.get_by_role('textbox', name='Name*').fill('Community Center Project Proposal - Windhoek, Namibia')",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Project proposal - Google Docs",
+        "children": [
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          },
+          {
+            "role": "dialog",
+            "name": "Copy document",
+            "modal": true,
+            "children": [
+              {
+                "role": "heading",
+                "name": "Copy document",
+                "level": 2
+              },
+              {
+                "role": "LineBreak",
+                "name": "\n"
+              },
+              {
+                "role": "text",
+                "name": "Name"
+              },
+              {
+                "role": "text",
+                "name": "*"
+              },
+              {
+                "role": "textbox",
+                "name": "Name*",
+                "focused": true,
+                "required": true,
+                "value": "Copy of Project proposal"
+              },
+              {
+                "role": "text",
+                "name": "Folder"
+              },
+              {
+                "role": "button",
+                "name": "Change folder button. Currently selected folder: My Drive"
+              },
+              {
+                "role": "checkbox",
+                "name": "Share it with the same people",
+                "checked": false
+              },
+              {
+                "role": "checkbox",
+                "name": "Copy comments and suggestions",
+                "checked": false
+              },
+              {
+                "role": "checkbox",
+                "name": "Include resolved comments and suggestions",
+                "disabled": true,
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Cancel"
+              },
+              {
+                "role": "button",
+                "name": "Make a copy"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click the 'Make a copy' button to finalize creating the new project proposal document.",
+      "code": "page.get_by_role('button', name='Make a copy').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Project proposal - Google Docs",
+        "children": [
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          },
+          {
+            "role": "dialog",
+            "name": "Copy document",
+            "modal": true,
+            "children": [
+              {
+                "role": "heading",
+                "name": "Copy document",
+                "level": 2
+              },
+              {
+                "role": "LineBreak",
+                "name": "\n"
+              },
+              {
+                "role": "text",
+                "name": "Name"
+              },
+              {
+                "role": "text",
+                "name": "*"
+              },
+              {
+                "role": "textbox",
+                "name": "Name*",
+                "focused": true,
+                "required": true,
+                "value": "Community Center Project Proposal - Windhoek, Namibia"
+              },
+              {
+                "role": "text",
+                "name": "Folder"
+              },
+              {
+                "role": "button",
+                "name": "Change folder button. Currently selected folder: My Drive"
+              },
+              {
+                "role": "checkbox",
+                "name": "Share it with the same people",
+                "checked": false
+              },
+              {
+                "role": "checkbox",
+                "name": "Copy comments and suggestions",
+                "checked": false
+              },
+              {
+                "role": "checkbox",
+                "name": "Include resolved comments and suggestions",
+                "disabled": true,
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Cancel"
+              },
+              {
+                "role": "button",
+                "name": "Make a copy"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1408 @@
+{
+  "persona": "A project manager who relies on accurate budget information to make strategic decisions",
+  "original_instruction": "Draft a letter using the Spearmint template to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia",
+  "augmented_instruction": "Open the Spearmint template and draft a letter to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia.",
+  "url": "https://docs.google.com",
+  "final_instruction": "Draft a letter inviting stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia using the Spearmint template in Google Docs.",
+  "task_steps": [
+    {
+      "step": "Open the Spearmint template to start drafting the letter.",
+      "code": "page.get_by_role('option', name='Letter Spearmint').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Google Docs",
+        "children": [
+          {
+            "role": "button",
+            "name": "Main menu"
+          },
+          {
+            "role": "link",
+            "name": "Docs"
+          },
+          {
+            "role": "combobox",
+            "name": "Search bar",
+            "autocomplete": "list",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "Search"
+          },
+          {
+            "role": "button",
+            "name": "Google apps"
+          },
+          {
+            "role": "button",
+            "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+          },
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "text",
+                "name": "Recently used templates"
+              },
+              {
+                "role": "listbox",
+                "name": "Recently used templates",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "option",
+                    "name": "Blank document"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Project proposal Tropic"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Resume Serif"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Resume Coral"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Letter Spearmint"
+                  },
+                  {
+                    "role": "option",
+                    "name": "Brochure Geometric"
+                  }
+                ]
+              },
+              {
+                "role": "heading",
+                "name": "Start a new document",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Template gallery"
+              },
+              {
+                "role": "button",
+                "name": "More actions.",
+                "haspopup": "menu"
+              }
+            ]
+          },
+          {
+            "role": "button",
+            "name": "Owner Filter Options",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "List view"
+          },
+          {
+            "role": "button",
+            "name": "Sort options",
+            "haspopup": "menu"
+          },
+          {
+            "role": "button",
+            "name": "Open file picker"
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click the 'Got it' button to dismiss the dialog about organizing your document with tabs.",
+      "code": "page.get_by_role('button', name='Got it').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Letter - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Letter"
+              },
+              {
+                "role": "textbox",
+                "name": "Rename",
+                "value": "Letter"
+              },
+              {
+                "role": "checkbox",
+                "name": "Star",
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Move"
+              },
+              {
+                "role": "button",
+                "name": "Document status: Saved to Drive."
+              },
+              {
+                "role": "button",
+                "name": "Last edit was seconds ago"
+              },
+              {
+                "role": "button",
+                "name": "Show all comments 0 new comments",
+                "pressed": false
+              },
+              {
+                "role": "button",
+                "name": "Join a call here or present this tab to the call",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Share. Private to only me. "
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Try Gemini"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help",
+                    "haspopup": "menu"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Search the menus (Option+/)",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "combobox",
+                    "name": "Menus",
+                    "autocomplete": "list",
+                    "haspopup": "listbox"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Main",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "button",
+                    "name": "Undo (⌘Z)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Redo (⌘Y)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Print (⌘P)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Spelling and grammar check (⌘+Option+X)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Paint format",
+                    "pressed": false
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Zoom",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Zoom",
+                        "autocomplete": "both",
+                        "value": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Styles",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Font",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Decrease font size (⌘+Shift+comma)"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Font size",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Font size",
+                        "autocomplete": "both",
+                        "value": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Increase font size (⌘+Shift+period)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Bold (⌘B)",
+                    "pressed": true
+                  },
+                  {
+                    "role": "button",
+                    "name": "Italic (⌘I)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Underline (⌘U)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Text color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Highlight color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert link (⌘K)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Add comment (⌘+Option+M)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert image",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "More",
+                    "disabled": true,
+                    "pressed": false
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Mode and view",
+                "orientation": "horizontal"
+              },
+              {
+                "role": "button",
+                "name": "Show side panel",
+                "pressed": true
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": "Document tabs",
+            "children": [
+              {
+                "role": "button",
+                "name": "Hide tabs & outlines"
+              },
+              {
+                "role": "heading",
+                "name": "Document tabs",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Add tab"
+              },
+              {
+                "role": "tree",
+                "name": "Document tabs",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "treeitem",
+                    "name": "Tab 1",
+                    "selected": true,
+                    "level": 1,
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Tab options",
+                        "haspopup": "menu"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "name": "Turn on screen reader support"
+          },
+          {
+            "role": "dialog",
+            "name": "Organize your document with tabs",
+            "description": "Organize your document with tabs Name tabs, add emojis, and create sub-tabs to add structure and make your document easier to read Got it",
+            "children": [
+              {
+                "role": "heading",
+                "name": "Organize your document with tabs",
+                "level": 1
+              },
+              {
+                "role": "text",
+                "name": "Name tabs, add emojis, and create sub-tabs to add structure and make your document easier to read"
+              },
+              {
+                "role": "button",
+                "name": "Got it"
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          }
+        ]
+      }
+    },
+    {
+      "step": "Focus on the textbox area to start drafting the letter.",
+      "code": "page.get_by_role('textbox', name='Rename').focus()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Letter - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Letter"
+              },
+              {
+                "role": "textbox",
+                "name": "Rename",
+                "value": "Letter"
+              },
+              {
+                "role": "checkbox",
+                "name": "Star",
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Move"
+              },
+              {
+                "role": "button",
+                "name": "Document status: Saved to Drive."
+              },
+              {
+                "role": "button",
+                "name": "Last edit was 3 minutes ago"
+              },
+              {
+                "role": "button",
+                "name": "Show all comments 0 new comments",
+                "pressed": false
+              },
+              {
+                "role": "button",
+                "name": "Join a call here or present this tab to the call",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Share. Private to only me. "
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Try Gemini"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help",
+                    "haspopup": "menu"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Search the menus (Option+/)",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "combobox",
+                    "name": "Menus",
+                    "autocomplete": "list",
+                    "haspopup": "listbox"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Main",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "button",
+                    "name": "Undo (⌘Z)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Redo (⌘Y)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Print (⌘P)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Spelling and grammar check (⌘+Option+X)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Paint format",
+                    "pressed": false
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Zoom",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Zoom",
+                        "autocomplete": "both",
+                        "value": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Styles",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Font",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Decrease font size (⌘+Shift+comma)"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Font size",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Font size",
+                        "autocomplete": "both",
+                        "value": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Increase font size (⌘+Shift+period)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Bold (⌘B)",
+                    "pressed": true
+                  },
+                  {
+                    "role": "button",
+                    "name": "Italic (⌘I)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Underline (⌘U)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Text color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Highlight color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert link (⌘K)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Add comment (⌘+Option+M)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert image",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "More",
+                    "disabled": true,
+                    "pressed": false
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Mode and view",
+                "orientation": "horizontal"
+              },
+              {
+                "role": "button",
+                "name": "Show side panel",
+                "pressed": true
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": "Document tabs",
+            "children": [
+              {
+                "role": "button",
+                "name": "Hide tabs & outlines"
+              },
+              {
+                "role": "heading",
+                "name": "Document tabs",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Add tab"
+              },
+              {
+                "role": "tree",
+                "name": "Document tabs",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "treeitem",
+                    "name": "Tab 1",
+                    "selected": true,
+                    "level": 1,
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Tab options",
+                        "haspopup": "menu"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "name": "Turn on screen reader support"
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          }
+        ]
+      }
+    },
+    {
+      "step": "Place the cursor at the beginning of the document to start drafting the letter.",
+      "code": "page.get_by_role('textbox', name='Rename').press('Enter')",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Letter - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Letter"
+              },
+              {
+                "role": "textbox",
+                "name": "Rename",
+                "focused": true,
+                "value": "Letter"
+              },
+              {
+                "role": "checkbox",
+                "name": "Star",
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Move"
+              },
+              {
+                "role": "button",
+                "name": "Document status: Saved to Drive."
+              },
+              {
+                "role": "button",
+                "name": "Last edit was 3 minutes ago"
+              },
+              {
+                "role": "button",
+                "name": "Show all comments 0 new comments",
+                "pressed": false
+              },
+              {
+                "role": "button",
+                "name": "Join a call here or present this tab to the call",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Share. Private to only me. "
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Try Gemini"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help",
+                    "haspopup": "menu"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Search the menus (Option+/)",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "combobox",
+                    "name": "Menus",
+                    "autocomplete": "list",
+                    "haspopup": "listbox"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Main",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "button",
+                    "name": "Undo (⌘Z)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Redo (⌘Y)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Print (⌘P)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Spelling and grammar check (⌘+Option+X)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Paint format",
+                    "pressed": false
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Zoom",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Zoom",
+                        "autocomplete": "both",
+                        "value": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Styles",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Font",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Decrease font size (⌘+Shift+comma)"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Font size",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Font size",
+                        "autocomplete": "both",
+                        "value": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Increase font size (⌘+Shift+period)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Bold (⌘B)",
+                    "pressed": true
+                  },
+                  {
+                    "role": "button",
+                    "name": "Italic (⌘I)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Underline (⌘U)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Text color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Highlight color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert link (⌘K)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Add comment (⌘+Option+M)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert image",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "More",
+                    "disabled": true,
+                    "pressed": false
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Mode and view",
+                "orientation": "horizontal"
+              },
+              {
+                "role": "button",
+                "name": "Show side panel",
+                "pressed": true
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": "Document tabs",
+            "children": [
+              {
+                "role": "button",
+                "name": "Hide tabs & outlines"
+              },
+              {
+                "role": "heading",
+                "name": "Document tabs",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Add tab"
+              },
+              {
+                "role": "tree",
+                "name": "Document tabs",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "treeitem",
+                    "name": "Tab 1",
+                    "selected": true,
+                    "level": 1,
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Tab options",
+                        "haspopup": "menu"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "name": "Turn on screen reader support"
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          }
+        ]
+      }
+    },
+    {
+      "step": "Start drafting the letter to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia.",
+      "code": "page.get_by_role('textbox', name='Rename').fill('Dear Stakeholders,\\n\\nWe are pleased to invite you to the annual review meeting for our solar energy project in Ulaanbaatar, Mongolia.\\n\\nKind regards,\\n[Your Name]')",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Letter - Google Docs",
+        "children": [
+          {
+            "role": "banner",
+            "name": "Menu bar",
+            "children": [
+              {
+                "role": "link",
+                "name": "Docs home"
+              },
+              {
+                "role": "text",
+                "name": "Letter"
+              },
+              {
+                "role": "textbox",
+                "name": "Rename",
+                "description": "located in My Drive Google Drive folder",
+                "value": "Letter"
+              },
+              {
+                "role": "checkbox",
+                "name": "Star",
+                "checked": false
+              },
+              {
+                "role": "button",
+                "name": "Move"
+              },
+              {
+                "role": "button",
+                "name": "Document status: Saved to Drive."
+              },
+              {
+                "role": "button",
+                "name": "Last edit was 4 minutes ago"
+              },
+              {
+                "role": "button",
+                "name": "Show all comments 0 new comments",
+                "pressed": false
+              },
+              {
+                "role": "button",
+                "name": "Join a call here or present this tab to the call",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Share. Private to only me. "
+              },
+              {
+                "role": "button",
+                "name": "Quick sharing actions",
+                "haspopup": "menu"
+              },
+              {
+                "role": "button",
+                "name": "Try Gemini"
+              },
+              {
+                "role": "button",
+                "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+              },
+              {
+                "role": "menubar",
+                "name": "",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "menuitem",
+                    "name": "File",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Edit",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "View",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Insert",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Format",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Tools",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Extensions",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "menuitem",
+                    "name": "Help",
+                    "haspopup": "menu"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Search the menus (Option+/)",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "combobox",
+                    "name": "Menus",
+                    "autocomplete": "list",
+                    "haspopup": "listbox"
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Main",
+                "orientation": "horizontal",
+                "children": [
+                  {
+                    "role": "button",
+                    "name": "Undo (⌘Z)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Redo (⌘Y)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Print (⌘P)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Spelling and grammar check (⌘+Option+X)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Paint format",
+                    "pressed": false
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Zoom",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Zoom",
+                        "autocomplete": "both",
+                        "value": "100%"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Styles",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "listbox",
+                    "name": "Font",
+                    "haspopup": "menu",
+                    "orientation": "vertical"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Decrease font size (⌘+Shift+comma)"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Font size",
+                    "haspopup": "menu",
+                    "children": [
+                      {
+                        "role": "textbox",
+                        "name": "Font size",
+                        "autocomplete": "both",
+                        "value": "11"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Increase font size (⌘+Shift+period)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Bold (⌘B)",
+                    "pressed": true
+                  },
+                  {
+                    "role": "button",
+                    "name": "Italic (⌘I)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Underline (⌘U)",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Text color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Highlight color",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert link (⌘K)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Add comment (⌘+Option+M)"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Insert image",
+                    "haspopup": "menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "More",
+                    "disabled": true,
+                    "pressed": false
+                  }
+                ]
+              },
+              {
+                "role": "toolbar",
+                "name": "Mode and view",
+                "orientation": "horizontal"
+              },
+              {
+                "role": "button",
+                "name": "Show side panel",
+                "pressed": true
+              }
+            ]
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": "Document tabs",
+            "children": [
+              {
+                "role": "button",
+                "name": "Hide tabs & outlines"
+              },
+              {
+                "role": "heading",
+                "name": "Document tabs",
+                "level": 2
+              },
+              {
+                "role": "button",
+                "name": "Add tab"
+              },
+              {
+                "role": "tree",
+                "name": "Document tabs",
+                "orientation": "vertical",
+                "children": [
+                  {
+                    "role": "treeitem",
+                    "name": "Tab 1",
+                    "selected": true,
+                    "level": 1,
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Tab options",
+                        "haspopup": "menu"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "name": "Turn on screen reader support"
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "text",
+            "name": "To enable screen reader support, press ⌘+Option+Z To learn about keyboard shortcuts, press ⌘slash"
+          }
+        ]
+      }
+    }
+  ]
+}

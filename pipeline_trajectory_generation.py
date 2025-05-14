@@ -68,6 +68,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
         try:
             # Process only the specified range of instructions
             for idx, instruction_data in enumerate(all_instructions[start_idx:end_idx], start=start_idx):
+                should_continue = True
                 persona = instruction_data['persona']
                 url = instruction_data['url']  # Get URL for this instruction
                 original_instruction = instruction_data['original_instruction']
@@ -97,7 +98,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                     # Wait for login to complete
                     page.wait_for_selector('[aria-label*="Google Account"]', timeout=300000)
                     print("✅ Logged in successfully!")
-                    while True:
+                    while should_continue:
                         # Take screenshot with UUID-based path
                         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                         screenshot_path = os.path.join(instruction_dir, f"step_{timestamp}.png")
@@ -117,7 +118,8 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                             previous_steps=execution_history,  # Use execution_history instead
                             taskGoal=augmented_instruction,
                             image_path=screenshot_path,
-                            is_deletion_task=is_deletion_task
+                            is_deletion_task=is_deletion_task,
+                            failed_codes= None
                         )
 
                         if "summary_instruction" in gpt_response:
@@ -130,6 +132,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                 "persona": persona,
                                 "original_instruction": original_instruction,
                                 "augmented_instruction": augmented_instruction,
+                                "url": url,
                                 "final_instruction": gpt_response['summary_instruction'],
                                 "task_steps": [
                                     {
@@ -144,18 +147,19 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                             with open(summary_path, "w", encoding="utf-8") as f:
                                 json.dump(summary_data, f, indent=2, ensure_ascii=False)
                             print(f"Task summarizer saved to {summary_path}")
+                            should_continue = False
                             break
 
                         # Rest of the execution code...
                         description = gpt_response["description"]
                         code = gpt_response["code"]
-                        print(f"🤖 Executing Description: {description}")
-                        print(f"🤖 Executing Playwright code: {code}")
                         
                         retry_count = 0
                         failed_codes = []
-                        while retry_count < max_retries:
+                        while retry_count < max_retries and should_continue:
                             try:
+                                print(f"🤖 Executing Description: {description}")
+                                print(f"🤖 Executing Playwright code: {code}")
                                 exec(code)
                                 # Store in both arrays
                                 execution_history.append({
@@ -171,6 +175,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                             except Exception as e:
                                 retry_count += 1
                                 failed_codes.append(code)
+                                print(f"Failed codes: {failed_codes}")
                                 
                                 if retry_count < max_retries:
                                     print(f"⚠️ Attempt {retry_count} failed: {str(e)}")
@@ -190,13 +195,17 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                         is_deletion_task=is_deletion_task
                                     )
                                     
-                                    if gpt_response is None:
+                                    if "summary_instruction" in gpt_response:
                                         print("Task completed!")
+                                        should_continue = False
                                         break
                                     new_description = gpt_response["description"]
                                     new_code = gpt_response["code"]
                                     print(f"🤖 New Attempt Description: {new_description}")
                                     print(f"🤖 New attempt with code: {new_code}")    
+                                    # Update the code variable with the new code
+                                    code = new_code
+                                    description = new_description
                                     try:
                                         exec(new_code)
                                         # Store in both arrays
@@ -221,11 +230,11 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                         print(f"🗑️ Deleted incomplete instruction directory: {instruction_dir}")
                                     except Exception as e:
                                         print(f"⚠️ Failed to delete directory {instruction_dir}: {str(e)}")
-                                    # Break out of the while True loop to move to next instruction
-                                    break
+                                    should_continue = False
+                                    break  # Break out of the while True loop to move to next instruction
 
                         # Only wait if we haven't hit max retries
-                        if retry_count < max_retries:
+                        if retry_count < max_retries and should_continue:
                             page.wait_for_timeout(2000)
 
                 except Exception as e:
@@ -237,6 +246,7 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                         print(f"🗑️ Deleted incomplete instruction directory: {instruction_dir}")
                     except Exception as del_e:
                         print(f"⚠️ Failed to delete directory {instruction_dir}: {str(del_e)}")
+                    should_continue = False
                 finally:
                     # Close the page but keep the browser open
                     page.close()

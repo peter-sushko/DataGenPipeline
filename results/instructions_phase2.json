@@ -1,2 +1,20 @@
 [
+  {
+    "persona": "A member of the nonprofit organization who finds immense joy and inspiration in the artist's creations",
+    "url": "https://calendar.google.com",
+    "instructions": [
+      "Delete the \"3pm Practice Session\" event on May 14th",
+      "Rename the \"New Calendar Name\" to \"Art Events\"",
+      "Add a new event on May 20th titled \"Gallery Visit\" at 4pm",
+      "Remove the \"Cultural Cuisine\" event on May 16th",
+      "Uncheck the \"Birthdays\" calendar to hide it from the view"
+    ],
+    "augmented_instructions": [
+      "Delete the \"3pm Practice Session\" event on May 14th",
+      "Rename \"New Calendar Name\" to \"Art Events\"",
+      "Add a new event titled \"Gallery Visit\" on May 20th at 4pm",
+      "Remove the \"Cultural Cuisine\" event on May 16th",
+      "Uncheck the \"Birthdays\" calendar to hide it from view"
+    ]
+  }
 ]

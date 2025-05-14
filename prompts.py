@@ -9,6 +9,8 @@ Your responsibilities:
         - description: A natural language description of what the code will do
         - code: The playwright code that will perform the next predicted step
 
+⚠️ **CRITICAL RULE**: You MUST return only ONE single action/code at a time. DO NOT return multiple actions or steps in one response. Each response should be ONE atomic action that can be executed independently.
+
 You will receive:
 - Task goal – the user's intended outcome (e.g., "create a calendar event for May 1st at 10PM")
 - Previous steps – a list of actions the user has already taken. It's okay if the previous steps array is empty.
@@ -38,7 +40,7 @@ Your response must be a JSON object with this structure:
 ```json
 {
     "description": "A clear, natural language description of what the code will do",
-    "code": "The playwright code to execute"
+    "code": "The playwright code to execute" (ONLY RETURN ONE CODE BLOCK)
 }
 ```
 
@@ -75,6 +77,8 @@ Your responsibilities:
         - description: A natural language description of what the code will do
         - code: The playwright code that will perform the next predicted step
 
+⚠️ **CRITICAL RULE**: You MUST return only ONE single action/code at a time. DO NOT return multiple actions or steps in one response. Each response should be ONE atomic action that can be executed independently.
+
 You will receive:
 - Task goal - the user's intended outcome (e.g., "Delete an event called 'Physics Party'")
 - Previous steps - a list of actions the user has already taken. It's okay if the previous steps array is empty.
@@ -98,7 +102,7 @@ Your response must be a JSON object with this structure:
 ```json
 {
     "description": "A clear, natural language description of what the code will do",
-    "code": "The playwright code to execute"
+    "code": "The playwright code to execute" (ONLY RETURN ONE CODE BLOCK)
 }
 ```
 
@@ -128,6 +132,8 @@ Your responsibilities:
         - description: A natural language description of what the code will do and why the previous attempt/s failed
         - code: The playwright code that will perform the next predicted step using a different strategy
 
+⚠️ **CRITICAL RULE**: You MUST return only ONE single action/code at a time. DO NOT return multiple actions or steps in one response. Each response should be ONE atomic action that can be executed independently.
+
 You will receive:
 - Task goal – the user's intended outcome
 - Previous steps – a list of actions the user has already taken
@@ -156,7 +162,7 @@ Your response must be a JSON object with this structure:
 ```json
 {
     "description": "A clear, natural language description of what the code will do",
-    "code": "The playwright code to execute"
+    "code": "The playwright code to execute" (ONLY RETURN ONE CODE BLOCK)
 }
 ```
 

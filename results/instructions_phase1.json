@@ -1,74 +1,20 @@
 [
   {
-    "persona": "A fellow culinary school student with a talent for making intricate sugar sculptures",
-    "url": "https://calendar.google.com",
+    "persona": "A project manager who relies on accurate budget information to make strategic decisions",
+    "url": "https://docs.google.com",
     "instructions": [
-      "Schedule a practice session for sugar sculpture techniques on May 14th at 3 PM",
-      "Add a reminder to check the availability of dragon fruit for the upcoming dessert competition on May 15th",
-      "Set up a meeting with the Cultural Cuisine Club to discuss the upcoming event on May 16th at 2 PM",
-      "Create an all-day event for the “International Sugar Art Show” on May 17th",
-      "Add a note to research traditional Eritrean desserts for the culinary project by May 12th"
+      "Create a project proposal document using the Tropic template for the new community center project in Windhoek, Namibia",
+      "Draft a letter using the Spearmint template to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia",
+      "Start a blank document and compile a list of potential suppliers for the eco-friendly housing project in Curitiba, Brazil",
+      "Use the Serif resume template to update the CV for the new project coordinator joining the team in Tbilisi, Georgia",
+      "Create a brochure using the Geometric template to showcase our recent achievements in the sustainable farming initiative in La Paz, Bolivia"
     ],
     "augmented_instructions": [
-      "Create an event titled \"Practice Session for Sugar Sculpture Techniques\" on May 14th at 3 PM.",
-      "Add a reminder titled \"Check Availability of Dragon Fruit for Dessert Competition\" on May 15th.",
-      "Schedule a meeting with the Cultural Cuisine Club to discuss the upcoming event on May 16th at 2 PM.",
-      "Create an all-day event titled \"International Sugar Art Show\" on May 17th.",
-      "Add a note titled \"Research Traditional Eritrean Desserts for Culinary Project\" with a deadline of May 12th."
-    ]
-  },
-  {
-    "persona": "A young entrepreneur with an incredible story of resilience and success",
-    "url": "https://calendar.google.com",
-    "instructions": [
-      "Schedule a meeting with the head of innovation at the Kigali Tech Hub on May 13th at 10 AM",
-      "Add a reminder for the launch of the new community project in Thimphu, Bhutan at 3 PM on May 13th",
-      "Create an event for the virtual panel discussion on sustainable business practices with the Nairobi Business Forum on May 13th at 4 PM",
-      "Set up a recurring weekly check-in every Tuesday at 11 AM with the team in Medellín, Colombia starting on May 13th",
-      "Add a calendar entry for a brainstorming session on eco-friendly product development to take place on May 13th from 1 PM to 2 PM"
-    ],
-    "augmented_instructions": [
-      "Schedule a meeting on May 13th, 2025, at 10 AM with the head of innovation at the Kigali Tech Hub.",
-      "Add a reminder on May 13th, 2025, at 3 PM for the launch of the new community project in Thimphu, Bhutan.",
-      "Create an event on May 13th, 2025, at 4 PM for the virtual panel discussion on sustainable business practices with the Nairobi Business Forum.",
-      "Set up a recurring weekly check-in every Tuesday at 11 AM with the team in Medellín, Colombia, starting on May 13th, 2025.",
-      "Add a calendar entry on May 13th, 2025, from 1 PM to 2 PM for a brainstorming session on eco-friendly product development."
-    ]
-  },
-  {
-    "persona": "An aspiring Herbalist who's just read Ellen's book.",
-    "url": "https://calendar.google.com",
-    "instructions": [
-      "Schedule a virtual workshop on May 15th at 3 PM to discuss the medicinal uses of native plants in the Andes",
-      "Add a reminder on May 14th to visit the local botanical garden in Albuquerque for research on desert herbs",
-      "Set up a recurring event every Thursday at 6 PM for a herbalist study group focusing on Southeast Asian herbs",
-      "Create a task list for May 16th to prepare herbal tinctures for the upcoming wellness fair in Oaxaca",
-      "Organize a meeting on May 18th with the local apothecary in Estonia to explore collaboration opportunities"
-    ],
-    "augmented_instructions": [
-      "Schedule an event on May 15th at 3 PM for a virtual workshop on the medicinal uses of native plants in the Andes.",
-      "Add a reminder on May 14th to visit the local botanical garden in Albuquerque for desert herbs research.",
-      "Set up a recurring event every Thursday at 6 PM for a herbalist study group on Southeast Asian herbs.",
-      "Create a task list for May 16th to prepare herbal tinctures for the wellness fair in Oaxaca.",
-      "Organize a meeting on May 18th with the local apothecary in Estonia for collaboration opportunities."
-    ]
-  },
-  {
-    "persona": "A fellow Belieber from a different country, with whom they bond over their shared love for Justin Bieber",
-    "url": "https://calendar.google.com",
-    "instructions": [
-      "Set a reminder to listen to Justin Bieber's new album release on May 20th at 5 PM",
-      "Schedule a virtual meet-up with fellow Beliebers from Lima, Peru on May 15th at 3 PM",
-      "Add a calendar event for a Justin Bieber fan art contest submission deadline on June 1st",
-      "Schedule a reminder to check for Justin Bieber concert tickets in Cape Town on May 18th",
-      "Create a task to write a blog post about Justin Bieber's influence on music trends by May 25th"
-    ],
-    "augmented_instructions": [
-      "Set a reminder for May 20th, 2025, at 5 PM to listen to Justin Bieber's new album release.",
-      "Schedule a virtual meet-up on May 15th, 2025, at 3 PM with fellow Beliebers from Lima, Peru.",
-      "Add a calendar event for June 1st, 2025, for the Justin Bieber fan art contest submission deadline.",
-      "Schedule a reminder for May 18th, 2025, to check for Justin Bieber concert tickets in Cape Town.",
-      "Create a task to write a blog post about Justin Bieber's influence on music trends by May 25th, 2025."
+      "Open the Tropic template and create a project proposal document for the new community center project in Windhoek, Namibia.",
+      "Open the Spearmint template and draft a letter to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia.",
+      "Start a blank document and compile a list of potential suppliers for the eco-friendly housing project in Curitiba, Brazil.",
+      "Open the Serif resume template and update the CV for the new project coordinator joining the team in Tbilisi, Georgia.",
+      "Open the Geometric template and create a brochure to showcase our recent achievements in the sustainable farming initiative in La Paz, Bolivia."
     ]
   }
 ]
