@@ -82,13 +82,14 @@ class TaskStep:
 
 task_summarizer = []
 
-def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, failed_codes=None, is_deletion_task=False, url=None):
+def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, taskPlan=None, image_path=None, failed_codes=None, is_deletion_task=False, url=None):
     """Get Playwright code directly from GPT to execute the next step.
     
     Args:
         accessibility_tree: The accessibility tree of the current page
         previous_steps: List of previous steps taken
-        taskGoal: The goal of the current task
+        taskGoal: The overall goal of the task (augmented instruction)
+        taskPlan: The current specific goal/plan to execute
         image_path: Path to the screenshot of the current page
         failed_codes: List of previously failed code attempts
         is_deletion_task: Whether this is a deletion task
@@ -144,7 +145,7 @@ def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGo
                         "content": [
                             {
                                 "type": "text",
-                                "text": f"Task goal: {taskGoal}\nPrevious steps: {json.dumps(previous_steps, indent=2)}\n\nAccessibility tree: {json.dumps(accessibility_tree, indent=2)}"
+                                "text": f"Task goal: {taskGoal}\nCurrent plan: {taskPlan}\nPrevious steps: {json.dumps(previous_steps, indent=2)}\n\nAccessibility tree: {json.dumps(accessibility_tree, indent=2)}"
                             },
                             {
                                 "type": "image_url",
