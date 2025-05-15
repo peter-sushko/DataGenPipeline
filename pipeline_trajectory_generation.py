@@ -10,8 +10,8 @@ from generate_trajectory import chat_ai_playwright_code
 
 # ========== CONFIGURABLE PARAMETERS ==========
 PHASE = 1
-START_IDX = 0
-END_IDX = 2
+START_IDX = 5
+END_IDX = 7
 MAX_RETRIES = 9
 ACTION_TIMEOUT = 30000  # 30 seconds timeout for actions
 # Execution Modes:
@@ -119,7 +119,8 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                             taskGoal=augmented_instruction,
                             image_path=screenshot_path,
                             is_deletion_task=is_deletion_task,
-                            failed_codes= None
+                            failed_codes= None,
+                            url=url
                         )
 
                         if "summary_instruction" in gpt_response:
@@ -192,7 +193,8 @@ def generate_trajectory_loop(user_data_dir, chrome_path, phase, start_idx, end_i
                                         taskGoal=augmented_instruction,
                                         image_path=screenshot_path,
                                         failed_codes=failed_codes,
-                                        is_deletion_task=is_deletion_task
+                                        is_deletion_task=is_deletion_task,
+                                        url=url
                                     )
                                     
                                     if "summary_instruction" in gpt_response:

@@ -11,9 +11,11 @@ from io import BytesIO
 import requests
 
 from prompts import (
-    PLAYWRIGHT_CODE_SYSTEM_MSG,
-    PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION,
-    PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED
+    PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED,
+    PLAYWRIGHT_CODE_SYSTEM_MSG_CALENDAR,
+    PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION_CALENDAR,
+    PLAYWRIGHT_CODE_SYSTEM_MSG_MAPS,
+    PLAYWRIGHT_CODE_SYSTEM_MSG_FLIGHTS,
 )
 
 load_dotenv()
@@ -80,7 +82,7 @@ class TaskStep:
 
 task_summarizer = []
 
-def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, failed_codes=None, is_deletion_task=False):
+def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGoal=None, image_path=None, failed_codes=None, is_deletion_task=False, url=None):
     """Get Playwright code directly from GPT to execute the next step.
     
     Args:
@@ -90,21 +92,32 @@ def chat_ai_playwright_code(accessibility_tree=None, previous_steps=None, taskGo
         image_path: Path to the screenshot of the current page
         failed_codes: List of previously failed code attempts
         is_deletion_task: Whether this is a deletion task
+        url: The URL of the current page
     """
     # Base system message
     if failed_codes and len(failed_codes) > 0:
-        if is_deletion_task:
-            base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED + "\n\n" + PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION
-            print("\n🤖 Using FAILED DELETION task prompt")
-        else:
-            base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED
-            print("\n🤖 Using FAILED ATTEMPT prompt")
-    elif is_deletion_task:
-        base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION
-        print("\n🤖 Using DELETION task prompt")
+        base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FAILED
+        print("\n🤖 Using FAILED ATTEMPT prompt")
     else:
-        base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG
-        print("\n🤖 Using STANDARD task prompt")
+        # Select prompt based on URL
+        if url:
+            if "calendar.google.com" in url:
+                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_DELETION_CALENDAR if is_deletion_task else PLAYWRIGHT_CODE_SYSTEM_MSG_CALENDAR
+                print("\n🤖 Using CALENDAR prompt" + (" (deletion)" if is_deletion_task else ""))
+            elif "maps.google.com" in url:
+                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_MAPS
+                print("\n🤖 Using MAPS prompt")
+            elif "flights.google.com" in url:
+                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_FLIGHTS
+                print("\n🤖 Using FLIGHTS prompt")
+            else:
+                # Default to calendar for backward compatibility
+                base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_CALENDAR
+                print("\n🤖 Using DEFAULT (CALENDAR) prompt")
+        else:
+            # Default to calendar for backward compatibility
+            base_system_message = PLAYWRIGHT_CODE_SYSTEM_MSG_CALENDAR
+            print("\n🤖 Using DEFAULT (CALENDAR) prompt")
 
     if accessibility_tree is not None and previous_steps is not None and image_path:
         try:

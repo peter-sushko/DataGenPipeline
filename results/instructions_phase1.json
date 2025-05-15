@@ -1,20 +1,38 @@
 [
   {
-    "persona": "A project manager who relies on accurate budget information to make strategic decisions",
-    "url": "https://docs.google.com",
+    "persona": "A storyteller passionate about legendary horse breeds and regional history",
+    "url": "https://calendar.google.com",
     "instructions": [
-      "Create a project proposal document using the Tropic template for the new community center project in Windhoek, Namibia",
-      "Draft a letter using the Spearmint template to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia",
-      "Start a blank document and compile a list of potential suppliers for the eco-friendly housing project in Curitiba, Brazil",
-      "Use the Serif resume template to update the CV for the new project coordinator joining the team in Tbilisi, Georgia",
-      "Create a brochure using the Geometric template to showcase our recent achievements in the sustainable farming initiative in La Paz, Bolivia"
+      "Add an event on May 16th at 4 PM titled \"Research Session on the Marwari Horse Breed.\"",
+      "Schedule a reminder on May 20th to call the Historical Society of Ulaanbaatar for information on Mongolian horse history",
+      "Create a calendar entry on May 24th at 2 PM for \"Interview with Andalusian Horse Breeder.\"",
+      "Set a recurring monthly event starting May 28th titled \"Write Blog Post on Lesser-Known Horse Breeds.\"",
+      "Add a note to the May 15th calendar entry to check availability for a visit to the Lusitano Horse Farm in Portugal"
     ],
     "augmented_instructions": [
-      "Open the Tropic template and create a project proposal document for the new community center project in Windhoek, Namibia.",
-      "Open the Spearmint template and draft a letter to invite stakeholders to the annual review meeting for the solar energy project in Ulaanbaatar, Mongolia.",
-      "Start a blank document and compile a list of potential suppliers for the eco-friendly housing project in Curitiba, Brazil.",
-      "Open the Serif resume template and update the CV for the new project coordinator joining the team in Tbilisi, Georgia.",
-      "Open the Geometric template and create a brochure to showcase our recent achievements in the sustainable farming initiative in La Paz, Bolivia."
+      "Create an event on May 16th at 4 PM named \"Research Session on the Marwari Horse Breed.\"",
+      "Set a reminder on May 20th to call the Historical Society of Ulaanbaatar about Mongolian horse history.",
+      "Add a calendar entry on May 24th at 2 PM for \"Interview with Andalusian Horse Breeder.\"",
+      "Schedule a recurring monthly event starting May 28th titled \"Write Blog Post on Lesser-Known Horse Breeds.\"",
+      "Update the May 15th calendar entry to include a note to check availability for a visit to the Lusitano Horse Farm in Portugal."
+    ]
+  },
+  {
+    "persona": "A Polish Mom who is excited about her kid's burgeoning interest in music.",
+    "url": "https://maps.google.com",
+    "instructions": [
+      "Find the nearest music school to Gas Works Park that offers violin lessons for beginners",
+      "Identify a cozy cafe in Fremont where I can enjoy some traditional Polish pastries",
+      "Locate the closest library to University Village that has a collection of Polish folk music",
+      "Search for a community center near Ravenna Park that hosts cultural music events",
+      "Check for any upcoming music workshops at the University of Washington related to Polish folklore"
+    ],
+    "augmented_instructions": [
+      "Search for the nearest music school to Gas Works Park offering beginner violin lessons.",
+      "Find a cozy cafe in Fremont serving traditional Polish pastries.",
+      "Locate the closest library to University Village with a collection of Polish folk music.",
+      "Search for a community center near Ravenna Park hosting cultural music events.",
+      "Check for upcoming music workshops at the University of Washington on Polish folklore."
     ]
   }
 ]

@@ -1,0 +1,3042 @@
+{
+  "persona": "A Polish Mom who is excited about her kid's burgeoning interest in music.",
+  "original_instruction": "Identify a cozy cafe in Fremont where I can enjoy some traditional Polish pastries",
+  "augmented_instruction": "Find a cozy cafe in Fremont serving traditional Polish pastries.",
+  "url": "https://maps.google.com",
+  "final_instruction": "Search for 'Cozy cafe in Fremont serving traditional Polish pastries' on Google Maps, view Baskette's details, and check its menu.",
+  "task_steps": [
+    {
+      "step": "Type 'Cozy cafe in Fremont serving traditional Polish pastries' into the search box",
+      "code": "page.get_by_role('combobox', name='Search Google Maps').fill('Cozy cafe in Fremont serving traditional Polish pastries')",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Google Maps",
+        "children": [
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "generic",
+                "name": "Google Maps",
+                "children": [
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "application",
+                    "name": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+                  },
+                  {
+                    "role": "text",
+                    "name": "Search Google Maps"
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "Search Google Maps",
+                    "expanded": true,
+                    "focused": true,
+                    "haspopup": "grid"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Directions"
+                  },
+                  {
+                    "role": "grid",
+                    "name": "Suggestions",
+                    "children": [
+                      {
+                        "role": "text",
+                        "name": ""
+                      },
+                      {
+                        "role": "text",
+                        "name": "Home"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Set location"
+                      },
+                      {
+                        "role": "text",
+                        "name": ""
+                      },
+                      {
+                        "role": "text",
+                        "name": "Gas Works Park"
+                      },
+                      {
+                        "role": "text",
+                        "name": "North Northlake Way, Seattle, WA"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Closed"
+                      },
+                      {
+                        "role": "text",
+                        "name": " ⋅ Opens 6 AM"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Delete"
+                      },
+                      {
+                        "role": "text",
+                        "name": ""
+                      },
+                      {
+                        "role": "text",
+                        "name": "Dusty Strings Music Store & School"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Fremont Avenue North, Seattle, WA"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Closed"
+                      },
+                      {
+                        "role": "text",
+                        "name": " ⋅ Opens 10:30 AM"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Delete"
+                      },
+                      {
+                        "role": "text",
+                        "name": ""
+                      },
+                      {
+                        "role": "text",
+                        "name": "University Village"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Northeast University Village Street, Seattle, WA"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Closed"
+                      },
+                      {
+                        "role": "text",
+                        "name": " ⋅ Opens 10 AM"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Delete"
+                      },
+                      {
+                        "role": "text",
+                        "name": ""
+                      },
+                      {
+                        "role": "text",
+                        "name": "Restroom"
+                      },
+                      {
+                        "role": "text",
+                        "name": "Northeast University Village Street, Seattle, WA"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Delete"
+                      },
+                      {
+                        "role": "text",
+                        "name": "More from recent history"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "heading",
+                    "name": "This area",
+                    "level": 1
+                  },
+                  {
+                    "role": "button",
+                    "name": "Light traffic in this area No delays nearby"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Restaurants"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Hotels"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Things to do"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Museums"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Transit"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Pharmacies"
+                      },
+                      {
+                        "role": "button",
+                        "name": "ATMs"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Next page"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Saved"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Recents"
+                  },
+                  {
+                    "role": "button",
+                    "name": "10 places Seattle"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Get the app"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google apps"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Your Location",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom in"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom out"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Street View coverage"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show imagery"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": "Interactive map"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Map data ©2025 Google"
+                  },
+                  {
+                    "role": "button",
+                    "name": "United States"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Terms"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Privacy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Send Product Feedback"
+                  },
+                  {
+                    "role": "button",
+                    "name": "2000 ft"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Press Enter in the search box to look for cafes.",
+      "code": "page.keyboard.press('Enter')",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Google Maps",
+        "children": [
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "generic",
+                "name": "Google Maps",
+                "children": [
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "application",
+                    "name": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "",
+                    "expanded": true,
+                    "focused": true,
+                    "haspopup": "grid",
+                    "value": "Cozy cafe in Fremont serving traditional Polish pastries"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Directions"
+                  },
+                  {
+                    "role": "grid",
+                    "name": "Suggestions"
+                  },
+                  {
+                    "role": "heading",
+                    "name": "Northeast Seattle",
+                    "level": 1
+                  },
+                  {
+                    "role": "text",
+                    "name": "55°"
+                  },
+                  {
+                    "role": "image",
+                    "name": "Mostly cloudy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Light traffic in this area No delays nearby"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Restaurants"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Hotels"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Things to do"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Museums"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Transit"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Pharmacies"
+                      },
+                      {
+                        "role": "button",
+                        "name": "ATMs"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Next page"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Saved"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Recents"
+                  },
+                  {
+                    "role": "button",
+                    "name": "10 places Seattle"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Get the app"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google apps"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Your Location",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom in"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom out"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Street View coverage"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show imagery"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": "Interactive map"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Map data ©2025 Google"
+                  },
+                  {
+                    "role": "button",
+                    "name": "United States"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Terms"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Privacy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Send Product Feedback"
+                  },
+                  {
+                    "role": "button",
+                    "name": "2000 ft"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click the 'Search this area' button to update the results based on the current map view.",
+      "code": "page.get_by_role('button', name='Search this area').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Cozy cafe in Fremont serving traditional Polish pastries - Google Maps",
+        "children": [
+          {
+            "role": "generic",
+            "name": "",
+            "focused": true,
+            "children": [
+              {
+                "role": "generic",
+                "name": "Google Maps",
+                "children": [
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "application",
+                    "name": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "",
+                    "haspopup": "grid",
+                    "value": "Cozy cafe in Fremont serving traditional Polish pastries"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Close"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search this area"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Price",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Rating",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Hours",
+                        "haspopup": "dialog"
+                      },
+                      {
+                        "role": "button",
+                        "name": "All filters"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Saved"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Recents"
+                  },
+                  {
+                    "role": "button",
+                    "name": "10 places Seattle"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Get the app"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "generic",
+                        "name": "",
+                        "children": [
+                          {
+                            "role": "feed",
+                            "name": "Results for Cozy cafe in Fremont serving traditional Polish pastries",
+                            "children": [
+                              {
+                                "role": "heading",
+                                "name": "Results",
+                                "level": 1
+                              },
+                              {
+                                "role": "button",
+                                "name": "Learn more about legal disclosure regarding public reviews on Google Maps"
+                              },
+                              {
+                                "role": "button",
+                                "name": "Share"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "3525 Stone Way N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Chill cafe with beer, bites & live music"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Vietnamese"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "709 N 35th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Baskette"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Baskette"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4459 Fremont Ave N Ste1"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"Great "
+                              },
+                              {
+                                "role": "text",
+                                "name": "coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", beautiful "
+                              },
+                              {
+                                "role": "text",
+                                "name": "pastries"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and cookies, frittata was amazing.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$20–30"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Turkish"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "750 N 34th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Quirky all-day stop for Turkish fare"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 11 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"The vibe was "
+                              },
+                              {
+                                "role": "text",
+                                "name": "cozy"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and authentic.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "RESERVE A TABLE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "452 N 36th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Modern coffee shop with baked goods"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 6:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4301 Fremont Ave N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Hip spot for house-roasted coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              }
+                            ]
+                          },
+                          {
+                            "role": "checkbox",
+                            "name": "Update results when map moves",
+                            "checked": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Collapse side panel"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google apps"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Your Location",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom in"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom out"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Street View coverage"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": "Interactive map"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Map data ©2025 Google"
+                  },
+                  {
+                    "role": "button",
+                    "name": "United States"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Terms"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Privacy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Send Product Feedback"
+                  },
+                  {
+                    "role": "button",
+                    "name": "1 mi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click on the link for 'Baskette' to view more details about this cafe.",
+      "code": "page.get_by_role('link', name='Baskette').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Cozy cafe in Fremont serving traditional Polish pastries - Google Maps",
+        "children": [
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "generic",
+                "name": "Google Maps",
+                "children": [
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "application",
+                    "name": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "",
+                    "haspopup": "grid",
+                    "value": "Cozy cafe in Fremont serving traditional Polish pastries"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Close"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Price",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Rating",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Hours",
+                        "haspopup": "dialog"
+                      },
+                      {
+                        "role": "button",
+                        "name": "All filters"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Saved"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Recents"
+                  },
+                  {
+                    "role": "button",
+                    "name": "10 places Seattle"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Get the app"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "generic",
+                        "name": "",
+                        "children": [
+                          {
+                            "role": "feed",
+                            "name": "Results for Cozy cafe in Fremont serving traditional Polish pastries",
+                            "children": [
+                              {
+                                "role": "heading",
+                                "name": "Results",
+                                "level": 1
+                              },
+                              {
+                                "role": "button",
+                                "name": "Learn more about legal disclosure regarding public reviews on Google Maps"
+                              },
+                              {
+                                "role": "button",
+                                "name": "Share"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "3525 Stone Way N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Chill cafe with beer, bites & live music"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Vietnamese"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "709 N 35th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Baskette"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Baskette"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4459 Fremont Ave N Ste1"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"Great "
+                              },
+                              {
+                                "role": "text",
+                                "name": "coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", beautiful "
+                              },
+                              {
+                                "role": "text",
+                                "name": "pastries"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and cookies, frittata was amazing.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$20–30"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Turkish"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "750 N 34th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Quirky all-day stop for Turkish fare"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 11 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"The vibe was "
+                              },
+                              {
+                                "role": "text",
+                                "name": "cozy"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and authentic.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "RESERVE A TABLE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "452 N 36th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Modern coffee shop with baked goods"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 6:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"Excellent "
+                              },
+                              {
+                                "role": "text",
+                                "name": "service"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", "
+                              },
+                              {
+                                "role": "text",
+                                "name": "baked goods"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", and beverages\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4301 Fremont Ave N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Hip spot for house-roasted coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              }
+                            ]
+                          },
+                          {
+                            "role": "checkbox",
+                            "name": "Update results when map moves",
+                            "checked": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Collapse side panel"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google apps"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Your Location",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom in"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom out"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Street View coverage"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": "Interactive map"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Layers"
+                  },
+                  {
+                    "role": "text",
+                    "name": "Map data ©2025 Google"
+                  },
+                  {
+                    "role": "button",
+                    "name": "United States"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Terms"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Privacy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Send Product Feedback"
+                  },
+                  {
+                    "role": "button",
+                    "name": "1 mi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "step": "Click the 'Menu' tab to view the menu of Baskette.",
+      "code": "page.get_by_role('tab', name='Menu').click()",
+      "accessibility_tree": {
+        "role": "WebArea",
+        "name": "Baskette - Google Maps",
+        "children": [
+          {
+            "role": "generic",
+            "name": "",
+            "children": [
+              {
+                "role": "generic",
+                "name": "Google Maps",
+                "children": [
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "application",
+                    "name": "Map · Use arrow keys to pan the map. · Get details about a place by pressing its corresponding number key."
+                  },
+                  {
+                    "role": "combobox",
+                    "name": "",
+                    "haspopup": "grid",
+                    "value": "Cozy cafe in Fremont serving traditional Polish pastries"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Close"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Search this area"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Price",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Rating",
+                        "haspopup": "menu"
+                      },
+                      {
+                        "role": "button",
+                        "name": "Hours",
+                        "haspopup": "dialog"
+                      },
+                      {
+                        "role": "button",
+                        "name": "All filters"
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Menu"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Saved"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Recents"
+                  },
+                  {
+                    "role": "button",
+                    "name": "11 places Seattle"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Get the app"
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "generic",
+                        "name": "",
+                        "children": [
+                          {
+                            "role": "feed",
+                            "name": "Results for Cozy cafe in Fremont serving traditional Polish pastries",
+                            "children": [
+                              {
+                                "role": "heading",
+                                "name": "Results",
+                                "level": 1
+                              },
+                              {
+                                "role": "button",
+                                "name": "Learn more about legal disclosure regarding public reviews on Google Maps"
+                              },
+                              {
+                                "role": "button",
+                                "name": "Share"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Stone Way Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "3525 Stone Way N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Chill cafe with beer, bites & live music"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": "CrackleMi Café & Catering"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Vietnamese"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "709 N 35th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              },
+                              {
+                                "role": "text",
+                                "name": "No-contact delivery"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Baskette · Visited link"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Baskette"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$10–20"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4459 Fremont Ave N Ste1"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 8 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"Great "
+                              },
+                              {
+                                "role": "text",
+                                "name": "coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", beautiful "
+                              },
+                              {
+                                "role": "text",
+                                "name": "pastries"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and cookies, frittata was amazing.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Cafe Turko"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$20–30"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Turkish"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "750 N 34th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Quirky all-day stop for Turkish fare"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 11 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"The vibe was "
+                              },
+                              {
+                                "role": "text",
+                                "name": "cozy"
+                              },
+                              {
+                                "role": "text",
+                                "name": " and authentic.\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "RESERVE A TABLE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Ladro - Fremont"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "452 N 36th St"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Modern coffee shop with baked goods"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 6:30 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "\"Excellent "
+                              },
+                              {
+                                "role": "text",
+                                "name": "service"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", "
+                              },
+                              {
+                                "role": "text",
+                                "name": "baked goods"
+                              },
+                              {
+                                "role": "text",
+                                "name": ", and beverages\""
+                              },
+                              {
+                                "role": "link",
+                                "name": "ORDER ONLINE"
+                              },
+                              {
+                                "role": "link",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Caffe Vita"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "$1–10"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Coffee shop"
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": ""
+                              },
+                              {
+                                "role": "text",
+                                "name": " "
+                              },
+                              {
+                                "role": "text",
+                                "name": "4301 Fremont Ave N"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Hip spot for house-roasted coffee"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Closed"
+                              },
+                              {
+                                "role": "text",
+                                "name": " ⋅ Opens 7 AM"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Dine-in"
+                              },
+                              {
+                                "role": "text",
+                                "name": "Takeout"
+                              }
+                            ]
+                          },
+                          {
+                            "role": "checkbox",
+                            "name": "Update results when map moves",
+                            "checked": false
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "generic",
+                    "name": "",
+                    "children": [
+                      {
+                        "role": "button",
+                        "name": "Close",
+                        "focused": true
+                      },
+                      {
+                        "role": "generic",
+                        "name": "",
+                        "children": [
+                          {
+                            "role": "button",
+                            "name": "Photo of Baskette"
+                          },
+                          {
+                            "role": "button",
+                            "name": "See photos"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Baskette",
+                            "level": 1
+                          },
+                          {
+                            "role": "text",
+                            "name": "(128)"
+                          },
+                          {
+                            "role": "text",
+                            "name": "$10–20"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Cafe"
+                          },
+                          {
+                            "role": "text",
+                            "name": ""
+                          },
+                          {
+                            "role": "tab",
+                            "name": "Overview of Baskette",
+                            "selected": true
+                          },
+                          {
+                            "role": "tab",
+                            "name": "Menu"
+                          },
+                          {
+                            "role": "tab",
+                            "name": "Reviews for Baskette"
+                          },
+                          {
+                            "role": "tab",
+                            "name": "About Baskette"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Directions"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Save"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Nearby"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Send to phone"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Share"
+                          },
+                          {
+                            "role": "link",
+                            "name": "ORDER ONLINE"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Serves dine-in Offers curbside pickup"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Address: 4459 Fremont Ave N Ste1, Seattle, WA 98103 "
+                          },
+                          {
+                            "role": "button",
+                            "name": "Copy address"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Hours Closed ⋅ Opens 8 AM Show open hours for the week"
+                          },
+                          {
+                            "role": "button",
+                            "name": "$10–20 per person Reported by 63 people"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Menu mybaskette.com"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Open menu link"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Copy menu link"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Website: mybaskette.com "
+                          },
+                          {
+                            "role": "link",
+                            "name": "Open website"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Copy website"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Phone: (206) 735-4555 "
+                          },
+                          {
+                            "role": "button",
+                            "name": "Copy phone number"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Call phone number"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Plus code: MJ6X+CR Seattle, Washington"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Copy plus code"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Learn more about plus codes"
+                          },
+                          {
+                            "role": "text",
+                            "name": "LGBTQ+ friendly"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Identifies as LGBTQ+ owned"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Your Maps activity"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Add a label"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Suggest an edit"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Updates from customers",
+                            "level": 2
+                          },
+                          {
+                            "role": "button",
+                            "name": "The salads are delicious. The sweets were perfection and I can’t say enough about the outstanding Apple/cheddar panini… super yummy . 💙 a year ago"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Menu & highlights",
+                            "level": 2
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 1 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Menu"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 2 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Juice"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 3 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Chia Pudding"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 4 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Savory Cheddar Cookies a Nanaimo Bar & Madeleine’S"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 5 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Tuna Melt Sandwhich"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 6 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Cheddar Cheese Apple Toasted Sandwich"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 7 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Box of 12 Nanaimo Bars"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 8 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Box of 15 Assorted Cookies"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 9 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Gilled Cheese"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 10 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Pumpkin"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 11 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Prosecco"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 12 of 12"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Endive"
+                          },
+                          {
+                            "role": "button",
+                            "name": "See more"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Photos & videos",
+                            "level": 2
+                          },
+                          {
+                            "role": "button",
+                            "name": "All"
+                          },
+                          {
+                            "role": "text",
+                            "name": "All"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Latest · 3 days ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Latest"
+                          },
+                          {
+                            "role": "text",
+                            "name": "3 days ago"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Videos"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Videos"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Menu"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Menu"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Food & drink"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Food & drink"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Vibe"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Vibe"
+                          },
+                          {
+                            "role": "button",
+                            "name": "By owner"
+                          },
+                          {
+                            "role": "text",
+                            "name": "By owner"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Street View & 360°"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Street View & 360°"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Add photos & videos"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Questions and answers",
+                            "level": 2
+                          },
+                          {
+                            "role": "link",
+                            "name": "Is there seating inside the cafe?"
+                          },
+                          {
+                            "role": "textbox",
+                            "name": "Ask the community"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Review summary",
+                            "level": 2
+                          },
+                          {
+                            "role": "button",
+                            "name": "More information about the review summary",
+                            "haspopup": "menu"
+                          },
+                          {
+                            "role": "text",
+                            "name": "5"
+                          },
+                          {
+                            "role": "text",
+                            "name": "4"
+                          },
+                          {
+                            "role": "text",
+                            "name": "3"
+                          },
+                          {
+                            "role": "text",
+                            "name": "2"
+                          },
+                          {
+                            "role": "text",
+                            "name": "1"
+                          },
+                          {
+                            "role": "text",
+                            "name": "4.8"
+                          },
+                          {
+                            "role": "button",
+                            "name": "128 reviews"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Photo of reviewer who wrote \"We are gluten and dairy free (a legit allergy) and they had bread we could eat!\""
+                          },
+                          {
+                            "role": "button",
+                            "name": "\"We are gluten and dairy free (a legit allergy) and they had bread we could eat!\""
+                          },
+                          {
+                            "role": "link",
+                            "name": "Photo of reviewer who wrote \"Plus the food tasted amazing, great service, and a rotating menu.\""
+                          },
+                          {
+                            "role": "button",
+                            "name": "\"Plus the food tasted amazing, great service, and a rotating menu.\""
+                          },
+                          {
+                            "role": "link",
+                            "name": "Photo of reviewer who wrote \"Also, the English muffin was dry and tough to chew and the egg was undercooked.\""
+                          },
+                          {
+                            "role": "button",
+                            "name": "\"Also, the English muffin was dry and tough to chew and the egg was undercooked.\""
+                          },
+                          {
+                            "role": "button",
+                            "name": "Write a review"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Reviews",
+                            "level": 2
+                          },
+                          {
+                            "role": "button",
+                            "name": "Search reviews"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Sort reviews"
+                          },
+                          {
+                            "role": "radio",
+                            "name": "All reviews",
+                            "checked": true
+                          },
+                          {
+                            "role": "radio",
+                            "name": "breakfast sandwich, mentioned in 16 reviews",
+                            "checked": false
+                          },
+                          {
+                            "role": "radio",
+                            "name": "wine, mentioned in 13 reviews",
+                            "checked": false
+                          },
+                          {
+                            "role": "radio",
+                            "name": "picnic, mentioned in 13 reviews",
+                            "checked": false
+                          },
+                          {
+                            "role": "radio",
+                            "name": "gifts, mentioned in 7 reviews",
+                            "checked": false
+                          },
+                          {
+                            "role": "button",
+                            "name": "View 6 more Topics"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo of CC"
+                          },
+                          {
+                            "role": "button",
+                            "name": "CC Local Guide · 142 reviews · 148 photos"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Actions for CC's review"
+                          },
+                          {
+                            "role": "image",
+                            "name": "5 stars"
+                          },
+                          {
+                            "role": "text",
+                            "name": "a month ago"
+                          },
+                          {
+                            "role": "generic",
+                            "name": "",
+                            "children": [
+                              {
+                                "role": "text",
+                                "name": "One of my favorite bfast sammies ever! Also the sweetest staff as well. Miso chocolate chip cookie was sooooo good. Great vibes here in a cozy neighborhood cafe setting, a very special breakfast sandwich made with care and flavor, and a …"
+                              },
+                              {
+                                "role": "button",
+                                "name": "See more"
+                              }
+                            ]
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 1 on CC's review"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 2 on CC's review"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Like",
+                            "description": "Like",
+                            "pressed": false
+                          },
+                          {
+                            "role": "button",
+                            "name": "Share CC's review."
+                          },
+                          {
+                            "role": "text",
+                            "name": "Response from the owner"
+                          },
+                          {
+                            "role": "text",
+                            "name": " "
+                          },
+                          {
+                            "role": "text",
+                            "name": "a month ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "CC,\nThank you so much for the lovely review! You tried some of our greatest hits! Miso chocolate chip cookie, breakfast sandwich (good choice on adding the house …"
+                          },
+                          {
+                            "role": "text",
+                            "name": " "
+                          },
+                          {
+                            "role": "button",
+                            "name": "See more"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo of Lisa Romanov"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Lisa Romanov Local Guide · 101 reviews · 56 photos"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Actions for Lisa Romanov's review"
+                          },
+                          {
+                            "role": "image",
+                            "name": "5 stars"
+                          },
+                          {
+                            "role": "text",
+                            "name": "3 weeks ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "NEW"
+                          },
+                          {
+                            "role": "generic",
+                            "name": "",
+                            "children": [
+                              {
+                                "role": "text",
+                                "name": "Adorable little bakery in Fremont! The owner Kelley and the baker Eamon are super friendly and very welcoming. Literally the best cinnamon roll I’ve had in all of Seattle, and unique baked goods like Japanese squash monkey bread with mango chutney. Sooo good! Please make a visit here and support them, it’s wonderful all around!!"
+                              },
+                              {
+                                "role": "button",
+                                "name": "See more"
+                              }
+                            ]
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 1 on Lisa Romanov's review"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 2 on Lisa Romanov's review"
+                          },
+                          {
+                            "role": "button",
+                            "name": "2 likes",
+                            "description": "2 likes",
+                            "pressed": false
+                          },
+                          {
+                            "role": "button",
+                            "name": "Share Lisa Romanov's review."
+                          },
+                          {
+                            "role": "text",
+                            "name": "Response from the owner"
+                          },
+                          {
+                            "role": "text",
+                            "name": " "
+                          },
+                          {
+                            "role": "text",
+                            "name": "2 weeks ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Hi Lisa! What a lovely review and we’re so grateful for that gorgeous constellation! Our cinnamon rolls definitely have a following and the monkey bread is a fave for both front and back of house. We’ve always got some fun treats in the works so be sure to swing by again soon! There’s a new cookie about to drop and it’s a killer! "
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo of Ling Tham"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Ling Tham Local Guide · 67 reviews · 89 photos"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Actions for Ling Tham's review"
+                          },
+                          {
+                            "role": "image",
+                            "name": "5 stars"
+                          },
+                          {
+                            "role": "text",
+                            "name": "a week ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "NEW"
+                          },
+                          {
+                            "role": "generic",
+                            "name": "",
+                            "children": [
+                              {
+                                "role": "text",
+                                "name": "We got the lunch combo (half a sandwich and soup or salad) for $15. Portions were a bit small but food was delicious. Tuna melt was really good and the seasoning/flavor of the pea soup and white bean salad was an unexpectedly highlight of the meal. Makes me want to recreate the pea soup and white bean salad at home."
+                              }
+                            ]
+                          },
+                          {
+                            "role": "button",
+                            "name": "Photo 1 on Ling Tham's review"
+                          },
+                          {
+                            "role": "button",
+                            "name": "Like",
+                            "description": "Like",
+                            "pressed": false
+                          },
+                          {
+                            "role": "button",
+                            "name": "Share Ling Tham's review."
+                          },
+                          {
+                            "role": "text",
+                            "name": "Response from the owner"
+                          },
+                          {
+                            "role": "text",
+                            "name": " "
+                          },
+                          {
+                            "role": "text",
+                            "name": "6 days ago"
+                          },
+                          {
+                            "role": "text",
+                            "name": "Ling! Thank you for the lovely constellation and kind review. While we don’t share recipes, the chef might give you some tips on how to recreate those items at home if you ask nicely 😊! For an extra $5, you can add a fresh pressed lemonade …"
+                          },
+                          {
+                            "role": "text",
+                            "name": " "
+                          },
+                          {
+                            "role": "button",
+                            "name": "See more"
+                          },
+                          {
+                            "role": "button",
+                            "name": "More reviews (125)"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "People also search for",
+                            "level": 2
+                          },
+                          {
+                            "role": "link",
+                            "name": "Stone Way Cafe · 4.6 stars · 1,596 reviews · Cafe"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Seattle Biscuit Company · 4.7 stars · 737 reviews · Brunch"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Caffe Vita · 4.5 stars · 299 reviews · Coffee shop"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Lazy Cow Bakery · 4.3 stars · 236 reviews · Vegan"
+                          },
+                          {
+                            "role": "link",
+                            "name": "Lighthouse Roasters Fine Coffees · 4.8 stars · 866 reviews · Coffee roasters"
+                          },
+                          {
+                            "role": "heading",
+                            "name": "Web results",
+                            "level": 2
+                          },
+                          {
+                            "role": "link",
+                            "name": "About this data"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "role": "button",
+                    "name": "Collapse side panel"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google apps"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Google Account: Samuel Samsudin (kukukud4@gmail.com)"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Your Location",
+                    "pressed": false
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom in"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Zoom out"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Show Street View coverage"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Street View"
+                  },
+                  {
+                    "role": "generic",
+                    "name": ""
+                  },
+                  {
+                    "role": "text",
+                    "name": "Map data ©2025 Google"
+                  },
+                  {
+                    "role": "button",
+                    "name": "United States"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Terms"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Privacy"
+                  },
+                  {
+                    "role": "button",
+                    "name": "Send Product Feedback"
+                  },
+                  {
+                    "role": "button",
+                    "name": "1 mi"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
